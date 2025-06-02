@@ -1,0 +1,130 @@
+{
+  "DEPARTMENT": "Department",
+  "DIFFICULTY": "Level",
+  "PRESET": "Type",
+  "COMPLETED_ON": "Completed on",
+  "NOT_FINISHED": "Not Finished",
+  "RESULT": "Result",
+  "SCORE": "Score",
+  "FEEDBACK": "Feedback",
+  "FINAL_RESULT": "Final Result",
+  "AWAITING_RESPONSE": {
+    "TITLE": "Awaiting participant response",
+    "MSG": "This participant is yet to answer the training. When they do, you'll be able to see the results here."
+  },
+  "NAME": "Name",
+  "ASSIGNED_ON": "Assigned on",
+  "ASSIGNEES": "Assignees",
+  "DELETE_TRAINING": {
+    "ALERT": {
+      "MESSAGE": "The training has been deleted along with all its' responses.",
+      "TITLE": "Training Deleted",
+      "ERROR": {
+        "MESSAGE": "An error ocurred while deleting the training, please try again later.",
+        "TITLE": "Error deleting training"
+      }
+    },
+    "CONFIRMATION": {
+      "TITLE": "Delete Training",
+      "HELPER": "You are about to delete the {{trainingName}} training. This cannot be undone. All responses and associated data will be lost and will not be recoverable and all links sent to complete the training will be rendered useless.",
+      "BUTTON": "Delete"
+    },
+    "BUTTON": "Delete Training"
+  },
+  "EDIT_TRAINING": {
+    "TITLE": "Edit Training",
+    "SUBTITLE": "To avoid unreliable results for trainings, you can only modify the name of the training once it's created. If you wish to change the type or difficulty of the training your team does, you must create a new one.",
+    "ALERT": {
+      "MESSAGE": "The training was successfully updated",
+      "TITLE": "Training Updated"
+    }
+  },
+  "TRAINING": {
+    "TITLE": "Training",
+    "NAME": {
+      "LABEL": "Training Name",
+      "HELPER": "Enter a name that will differentiate this training from others you have or will create in the future."
+    },
+    "PRESET": {
+      "LABEL": "Training type",
+      "HELPER": "The training type allows you to select from a variety of training scenarios for your team."
+    },
+    "LEVEL": {
+      "LABEL": "Training level",
+      "HELPER": "The level of the training determines both the scenario complexity and the number of questions."
+    },
+    "EMAILS": {
+      "LABEL": "Emails",
+      "HELPER": "TRAINING.EMAILS.HELPER"
+    }
+  },
+  "isRequired": "Is required",
+  "CANCEL": "Cancel",
+  "SAVE": "Save",
+  "AVERAGE_SCORE": "Average Score",
+  "COMPLETION_RATE": "Completion Rate",
+  "STATUS": "Status",
+  "ACTIVE": "Active",
+  "INACTIVE": "Inactive",
+  "CREATED_AT": "Created at",
+  "CREATE_TRAINING": {
+    "EMAIL": {
+      "SINGLE_DESCRIPTION": "Enter the emails of the people you want to enroll into this training below. Each person will receive an email with a link that will allow them to take the training.",
+      "LABEL": "Assignees",
+      "HELPER": "Add assignee emails and we'll take care of the rest",
+      "ERROR": "There was an error validating the email address",
+      "BUTTON": "Add"
+    },
+    "CONFIRMATION": {
+      "TITLE": "Confirmation",
+      "MSG": "Please confirm the details are correct"
+    },
+    "TRAINING": {
+      "TITLE": "Training",
+      "NAME": {
+        "LABEL": "Name"
+      },
+      "PRESET": {
+        "LABEL": "Type"
+      },
+      "LEVEL": {
+        "LABEL": "Level"
+      }
+    },
+    "ASSIGNEES": {
+      "SUBTITLE": "Assignees"
+    },
+    "SUBTITLE": "Configure the following parameters and Batuta will create a tailor-made training for each of participant.",
+    "ASSIGNMENT": {
+      "SUBTITLE": "Training Assignment",
+      "MSG": "Enter the emails of the people you want to enroll into this training below. Each person will receive an email with a link that will allow them to take the training."
+    },
+    "ALERT": {
+      "MESSAGE": "The training was successfully created and the assigned users have received an email with further instructions",
+      "TITLE": "Training Created"
+    },
+    "TITLE": "Create New Training"
+  },
+
+  "CONTINUE": "CONTINUE",
+  "BACK": "Back",
+  "CREATE": "Create",
+  "phishing": "Phishing",
+  "ransomware": "Ransomware",
+  "incident response": "Incident Response",
+  "physical security": "Physical Security",
+  "secure communication": "Secure Communication",
+  "BEGINNER": "Beginner",
+  "INTERMEDIATE": "Intermediate",
+  "EXPERT": "Expert",
+  "beginner_HELPER": "Five minute training around basic concepts most of which are multiple-choice",
+  "intermediate_HELPER": "10 minute training that requires a moderate knowledge level",
+  "expert_HELPER": "30 minute training with complex open-ended questions",
+  "CONFIRM": "Confirm",
+  "TOPIC": "Scenario",
+  "CREATED_ON": "Created on",
+  "TRAININGS": "Trainings",
+  "EXPORT_ALL": "Export all",
+  "EXPORT_ALL_SUBTITLE": "Export all trainings",
+  "CREATE_NEW_TRAINING": "Create new training"
+}

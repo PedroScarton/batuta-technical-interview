@@ -1,0 +1,17 @@
+/* ALERT BASE STYLES */
+.alertHeader h5 {
+  @apply relative overflow-hidden;
+}
+
+.animatedBar {
+  @apply absolute bottom-0 left-0 h-1 w-1/5 animate-[grow_4s_ease-in-out_forwards];
+}
+
+@keyframes grow {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 100%;
+  }
+}

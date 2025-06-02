@@ -1,0 +1,14 @@
+{
+  "SHELL_SELECTION": "Shell Selection",
+  "SCRIPT_SELECTION": "Script Selection",
+  "SELECT_SHELL": "Select a shell",
+  "SELECT_SCRIPT": "Select a script",
+  "SELECT_HOSTS": "Select hosts",
+  "SELECTED_SHELL": "Shell: ",
+  "SELECTED_SCRIPT": "Selected script: ",
+  "SEND_COMMAND": "Send Command",
+  "SCRIPTS_NOT_FOUND_FOR_SHELLTYPE": "No scripts found for the selected shell type",
+  "DETECTED_PARAMETERS": "Detected Parameters",
+  "DETECTED_PARAMETERS_TEXT": "Dynamic parameters have been detected in the command to be executed. Please enter the requested values.",
+  "ERROR_REQUIRED_PARAMETER": "This parameter is required"
+}

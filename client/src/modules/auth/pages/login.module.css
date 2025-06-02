@@ -1,0 +1,50 @@
+.login {
+  @apply mx-auto mt-12 w-11/12 max-w-3xl p-4;
+}
+
+.logotipo {
+  @apply flex items-center justify-center;
+}
+
+.singInText {
+  @apply mx-0 my-4 flex items-start justify-between;
+}
+
+.emailPasswordBox {
+  @apply transition-all duration-300;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tokenBox {
+  @apply transition-all duration-100;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boxShown {
+  @apply max-h-screen overflow-visible opacity-100;
+}
+.boxHidden {
+  @apply max-h-0 overflow-hidden opacity-0;
+}
+
+.link {
+  @apply text-xs underline;
+}
+
+.linkContainer {
+  @apply mt-1 w-full text-center;
+}
+
+.footer {
+  @apply text-center;
+}
+
+.footer a {
+  @apply text-primary;
+}
+
+.paddingTop {
+  @apply pt-4;
+}
+
+.locale {
+  @apply flex items-center pt-4;
+}

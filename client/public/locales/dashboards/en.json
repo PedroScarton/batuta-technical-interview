@@ -1,0 +1,22 @@
+{
+  "REPORT": "Report",
+  "ASSESSMENT": "Assessment",
+  "NO_DASHBOARDS": "No dashboards found",
+  "NO_DASHBOARD": "Dashboard not found",
+  "TITLE_PARAGRAPH": "Explore your dashboards",
+  "MANAGE_ACCESS": "Manage Access",
+  "USER_WITH_ACCESS": "User with access",
+  "REVOKE_ALL_ACCESS": "Revoke all access",
+  "ALL_DASHBOARDS": "All Dashboards",
+  "OF": "of {{of}}",
+  "SUCCESS_ACCESS_MSG": "Access to the dashboard has been granted successfully to selected users",
+  "SUCCESS_ACCESS": "Access Granted",
+  "SUCCESS_DENIED_MSG": "Access to the dashboard has been denied to selected users.",
+  "SUCCESS_DENIED": "Access Denied",
+  "ERROR_ACCESS_MSG": "An error occurred while attempting to change access",
+  "ERROR_ACCESS": "Access Change Error",
+  "UPDATED_USERS": {
+    "TITLE": "Updated Users",
+    "MESSAGE": "Updated user access list"
+  }
+}

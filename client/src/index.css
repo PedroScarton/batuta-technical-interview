@@ -1,0 +1,494 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles*/
+:root {
+  /* Colors 2024-05-16 */
+  /* https://www.figma.com/design/VPzZSWeUpwxXnCXY5E9vPh/Batuta-Design?node-id=6508-48104&t=Eqor2MPfbHk2u2yd-11 */
+  --color-primary-main: 63 190 209;
+  --color-primary-light: 82 206 224;
+  --color-primary-dark: 50 135 142;
+
+  --color-secondary: 42 125 226;
+
+  --color-neutral-900: 26 26 26;
+  --color-neutral-800: 38 39 41;
+  --color-neutral-700: 58 59 61;
+  --color-neutral-600: 72 72 72;
+  --color-neutral-500: 84 84 86;
+  --color-neutral-400: 163 163 163;
+  --color-neutral-300: 199 197 198;
+  --color-neutral-200: 229 229 229;
+  --color-neutral-100: 241 241 241;
+  --color-neutral-0: 255 255 255;
+
+  --color-black: 26 26 26;
+  --color-white: 255 255 255;
+
+  --color-system-danger: 229 11 70;
+  --color-system-alert: 255 117 32;
+  --color-system-warning: 249 209 0;
+  --color-system-success: 0 181 119;
+  --color-system-critical: 102 58 181;
+
+  --background-gradient: linear-gradient(
+    rgb(var(--color-neutral-700)),
+    rgb(var(--color-neutral-800))
+  );
+
+  --color-linear-gradient-green-blue: linear-gradient(
+    90deg,
+    var(--color-green) 0%,
+    var(--color-primary-light) 100%
+  );
+
+  /*Gradient Chart*/
+  --yellow-gradient-chart: linear-gradient(
+    180deg,
+    rgb(var(--color-system-warning)) 100%,
+    rgb(var(--color-system-warning) / 0.1) 0%
+  );
+  --gree-gradient-chart: linear-gradient(
+    180deg,
+    rgb(var(--color-system-success)) 100%,
+    rgb(var(--color-system-success) / 0.1) 0%
+  );
+  --gray-gradient-chart: linear-gradient(
+    180deg,
+    rgb(var(--color-neutral-400)) 100%,
+    rgb(var(--color-neutral-400) / 0) 0%
+  );
+  --cyan-gradient-chart: linear-gradient(
+    180deg,
+    rgb(var(--cyan-low-chart)) 100%,
+    rgb(var(--cyan-low-chart) / 0) 0%
+  );
+}
+
+@layer base {
+  * {
+    @apply m-0 box-border p-0 outline-none;
+  }
+
+  *:focus {
+    @apply outline-none;
+  }
+
+  /* for firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--color-neutral-500)) transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply m-2 rounded-lg;
+    display: initial;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-neutral-0;
+  }
+
+  body {
+    @apply bg-cover bg-fixed font-sans text-base font-light text-neutral-0 antialiased;
+    overflow: hidden;
+  }
+
+  code {
+    @apply font-mono;
+  }
+
+  /* Default styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title;
+  }
+
+  code {
+    @apply font-mono;
+  }
+
+  label {
+    @apply font-sans font-normal;
+  }
+
+  label {
+    @apply text-xs leading-4;
+  }
+
+  a,
+  a:visited {
+    @apply text-xs font-normal leading-4 text-neutral-0;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+
+  .main__close {
+    @apply relative box-border w-full overflow-y-auto pl-14;
+    height: calc(100vh - 3.5rem);
+  }
+  .main__open {
+    @apply relative box-border w-full overflow-y-auto pl-64;
+    height: calc(100vh - 3.5rem);
+  }
+}
+
+/* component layer add-ons */
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  .main__padding {
+    @apply p-5;
+  }
+
+  .main__container::-webkit-scrollbar {
+    @apply h-2 w-2 rounded-lg bg-transparent;
+  }
+
+  .main__container::-webkit-scrollbar-thumb {
+    @apply m-1 bg-neutral-0;
+  }
+
+  .body-xs,
+  .body-sm,
+  .body-md,
+  .body-lg,
+  .label-sm,
+  .label-md,
+  .label-lg {
+    @apply font-sans font-light tracking-wide;
+  }
+
+  .body-xs {
+    @apply text-tiny leading-3;
+  }
+
+  .body-sm {
+    @apply text-xs leading-4;
+  }
+
+  .body-md {
+    @apply text-sm leading-5;
+  }
+
+  .body-lg {
+    @apply text-base leading-6;
+  }
+
+  .label-sm,
+  .label-md,
+  .label-lg {
+    @apply font-normal tracking-wider;
+  }
+
+  .label-sm {
+    @apply text-tiny leading-4;
+  }
+
+  .label-md {
+    @apply text-xs leading-4;
+  }
+
+  .label-lg {
+    @apply text-sm leading-5;
+  }
+
+  .title-sm,
+  .title-md,
+  .title-lg,
+  .headline-sm,
+  .headline-md,
+  .headline-lg,
+  .display-sm,
+  .display-md,
+  .display-lg {
+    @apply font-title uppercase tracking-widest;
+  }
+
+  .title-sm {
+    @apply text-sm font-light leading-5;
+  }
+
+  .title-md {
+    @apply text-base font-normal leading-6;
+  }
+
+  .title-lg {
+    @apply text-xl font-normal leading-7;
+  }
+
+  .headline-sm {
+    @apply text-xl font-light leading-8;
+  }
+
+  .headline-md {
+    @apply text-2xl font-light leading-9;
+  }
+
+  .headline-lg {
+    @apply text-4xl font-light leading-10;
+  }
+
+  .display-sm {
+    @apply text-4xl font-light leading-10;
+  }
+
+  .display-md {
+    @apply text-5xl font-light leading-11;
+  }
+
+  .display-lg {
+    @apply text-6xl font-light leading-12;
+  }
+
+  .link {
+    @apply text-xs font-normal leading-4;
+  }
+
+  .disable-kerning {
+    font-kerning: none;
+  }
+}
+
+/* Modern browsers with `scrollbar-*` support */
+@-moz-document url-prefix() {
+  * {
+    scrollbar-color: #fff4 transparent;
+    scrollbar-width: thin;
+  }
+}
+
+/* Legacy browsers with `::-webkit-scrollbar-*` support */
+::-webkit-scrollbar {
+  max-width: 8;
+  max-height: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff4;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fff8;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #fff8;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0rem;
+  height: 0rem;
+}
+
+#modal-hook {
+  @apply z-[1301];
+}
+
+/* ===== Recharts ===== */
+.recharts-legend-item {
+  cursor: pointer;
+}
+
+circle.overviewMapMarker {
+  animation: blink 10s infinite;
+}
+
+@keyframes blink {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  20% {
+    fill: rgb(var(--color-primary-main) / 0.75);
+    stroke: rgb(var(--color-primary-main) / 0.5);
+  }
+  40% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  60% {
+    fill: rgb(var(--color-primary-main) / 0.75);
+    stroke: rgb(var(--color-primary-main) / 0.5);
+  }
+  80% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  100% {
+    fill: rgb(var(--color-primary-main) / 0.75);
+    stroke: rgb(var(--color-primary-main) / 0.5);
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  20% {
+    fill: rgb(var(--color-system-success));
+    stroke: rgb(var(--color-system-success), 0.5);
+  }
+  40% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  60% {
+    fill: rgb(var(--color-system-success));
+    stroke: rgb(var(--color-system-success), 0.5);
+  }
+  80% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  100% {
+    fill: rgb(var(--color-system-success));
+    stroke: rgb(var(--color-system-success), 0.5);
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(0, 255, 255, 0.4));
+    opacity: 0.7;
+  }
+  50% {
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.8));
+    opacity: 1;
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 1.6s ease-in-out infinite;
+}
+
+/* Propuesta 1: Pulso ondulante */
+.logo-fluid-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+}
+
+.logo-fluid #circle-base {
+  animation: mirrorPulseLeft 3.5s ease-in-out infinite;
+  transform-origin: right;
+}
+
+.logo-fluid #detail-left {
+  animation: mirrorPulseCenter 3.5s ease-in infinite;
+  transform-origin: left center;
+}
+
+.logo-fluid #detail-right {
+  animation: mirrorPulseRight 3.5s ease-out infinite;
+  transform-origin: right;
+}
+
+@keyframes mirrorPulseLeft {
+  0%,
+  100% {
+    transform: scaleX(1);
+    filter: drop-shadow(0 0 4px rgba(63, 190, 209, 0.7));
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(-0.1);
+    filter: drop-shadow(0 0 4px rgba(63, 190, 209, 0.1));
+    opacity: 0;
+  }
+}
+
+@keyframes mirrorPulseCenter {
+  0%,
+  100% {
+    transform: scaleX(1);
+    filter: drop-shadow(0 0 4px rgba(63, 190, 209, 0.7));
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(-0.1);
+    filter: drop-shadow(0 0 4px rgba(63, 190, 209, 0.1));
+    opacity: 0;
+  }
+}
+
+@keyframes mirrorPulseRight {
+  0%,
+  100% {
+    transform: scaleX(1);
+    filter: drop-shadow(0 0 4px rgba(63, 190, 209, 0.7));
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(-0.1);
+    filter: drop-shadow(0 0 4px rgba(63, 190, 209, 0.1));
+    opacity: 0;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  border-radius: 0.5rem;
+  border: 1px solid rgb(var(--color-neutral-800));
+  -webkit-box-shadow: 0 0 0 30px rgb(var(--color-neutral-800)) inset !important;
+  -webkit-text-fill-color: rgb(var(--color-neutral-100)) !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

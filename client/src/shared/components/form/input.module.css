@@ -1,0 +1,9 @@
+.TextContainer {
+  margin-top: 0.125rem;
+  min-height: 1.5rem;
+  @apply flex items-center;
+}
+
+.iconContainer {
+  @apply pointer-events-none absolute right-2 top-1/2 flex h-6 -translate-y-1/2 content-center items-center;
+}

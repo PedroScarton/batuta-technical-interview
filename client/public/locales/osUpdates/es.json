@@ -1,0 +1,37 @@
+{
+  "HOSTS_AFFECTED": "Hosts Afectados",
+  "FAMILY_AFFECTED": "Familia Afectada",
+  "SO": "Sistema Operativo",
+  "MAX_EXPOSURE": "Máxima Exposición",
+  "SECURITY_UPDATE": "Actualización de Seguridad",
+  "DAYS": "Días",
+  "LESS_1_DAY": "Menos de 1 día",
+  "SECURITY_TITLE": "Actualizaciones de seguridad disponibles",
+  "UPDATE_TITLE": "Actualizaciones pendientes",
+  "HOST_UPDATE_TITLE": "Equipos con actualizaciones pendientes",
+  "UPDATE": "Actualización Pendiente",
+  "UPDATES": "Actualizaciones Pendientes",
+  "FIRST_SEEN": "Visto por primera vez",
+  "OS_UPDATES": {
+    "TITLE": "Actualizaciones de SO",
+    "SCHEDULE_INFORMATION": "Las actualizaciones disponibles se actualizan cada 6 horas, pero el proceso de escaneo se puede iniciar manualmente",
+    "UPDATE_ALL": {
+      "BUTTON": {
+        "TEXT": "Refrescar actualizaciones",
+        "TOOLTIP": "Las actualizaciones disponibles se actualizan cada 6 horas, pero el proceso de escaneo se puede iniciar manualmente"
+      },
+      "INFO": {
+        "TITLE": "Refrescando actualizaciones",
+        "MSG": "Batuta está actualizando el listado de actualizaciones pendientes. Este procedimiento puede tomar unos segundos."
+      },
+      "SUCCESS": {
+        "TITLE": "Actualizaciones refrescada",
+        "MSG": "Se escanearon todos los equipos exitosamente."
+      },
+      "ERROR": {
+        "TITLE": "Actualización fallida",
+        "MSG": "Se presentó un error mientras se actualizaba el listado. Por favor intenta de nuevo más tarde."
+      }
+    }
+  }
+}

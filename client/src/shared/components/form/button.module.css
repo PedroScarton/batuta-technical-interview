@@ -1,0 +1,22 @@
+.button {
+  @apply min-h-10 w-full cursor-pointer rounded border-none bg-primary bg-center font-sans font-bold text-neutral-0 transition-colors duration-500;
+}
+
+.button:hover {
+  background: rgb(var(--color-primary-light))
+    radial-gradient(circle, transparent 1%, rgb(var(--color-primary-light)) 1%) center/15000%;
+}
+
+.button:active {
+  @apply bg-primary;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.button:disabled {
+  @apply bg-neutral-500;
+}
+
+.buttonFullWidth {
+  @apply w-full;
+}

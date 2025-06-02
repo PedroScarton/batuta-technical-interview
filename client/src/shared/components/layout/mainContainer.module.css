@@ -1,0 +1,12 @@
+.mainContainer {
+  @apply relative flex h-full flex-1 flex-col gap-4 overflow-y-auto p-8;
+  /* Fallback to vh for old browsers */
+  max-height: calc(100vh - 3.5rem);
+  /* Dynamic view height for mobile devices */
+  /* https://caniuse.com/mdn-css_types_length_viewport_percentage_units_dynamic */
+  max-height: calc(100dvh - 3.5rem);
+}
+
+.mainContainer > * {
+  @apply shrink-0;
+}

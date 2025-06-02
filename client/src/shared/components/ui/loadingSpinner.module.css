@@ -1,0 +1,8 @@
+.center {
+  @apply flex h-screen content-center justify-center pt-64;
+}
+
+.contained {
+  @apply flex items-center justify-center;
+  padding: 0.625rem;
+}

@@ -1,0 +1,382 @@
+{
+  "FIXES": "Mitigaciones",
+  "SCRIPT_TAGS": "Etiquetas de Script",
+  "SHELLTYPE": "Tipo de Shell",
+  "SELECTED_SCRIPTS": "Scripts Seleccionados",
+  "REMOVING_MANY_HEADER": "Eliminando Scripts",
+  "REMOVING_MANY_HELPER_MODAL": "¿Está seguro de que desea eliminar los scripts seleccionados?",
+  "REMOVING_SCRIPT": "Eliminando Script",
+  "REMOVING_SCRIPT_SUBTITLE": "¿Está seguro de que desea eliminar el script seleccionado?",
+  "EDIT_SCRIPT_ACTION": "Editar Script",
+  "REMOVE_SCRIPT_ACTION": "Eliminar Script",
+  "SCRIPT_REMOVED": "Script Eliminado",
+  "SCRIPT_REMOVED_ALERT": "El script se ha eliminado con éxito",
+  "EDITING_SCRIPT": "Editando Script",
+  "ERROR_LOADING_SCRIPT": "Error al Cargar Script",
+  "ERROR_LOADING_SCRIPT_TEXT": "Hubo un error al cargar el script. Por favor, inténtelo de nuevo.",
+  "CREATE_SCRIPT": "Crear Script",
+  "CREATING_SCRIPT": "Creando Script",
+  "SCRIPT_CREATED": "Script Creado",
+  "SCRIPT_CREATED_ALERT": "El script se ha creado con éxito",
+  "SCRIPT_UPDATED": "Script Modificado",
+  "SCRIPT_UPDATED_ALERT": "El script se modificó con éxito",
+  "ERROR_CREATING_SCRIPT": "Error al Crear Script",
+  "ERROR_CREATING_SCRIPT_TEXT": "Hubo un error al crear el script. Por favor, inténtelo de nuevo.",
+  "ERROR_UPDATING_SCRIPT": "Error al Modificar el Script",
+  "ERROR_UPDATING_SCRIPT_TEXT": "Hubo un error al modificar el script. Por favor, inténtelo de nuevo.",
+  "SELECT_HOSTS": "Seleccionar Hosts",
+  "USE_SCRIPT": "Usar Script",
+  "SELECT_HOST_ACTION": "Seleccionar Acción del Host",
+  "SCRIPTS_REMOVED_MSG": "Los scripts se han eliminado con éxito.",
+  "SCRIPTS_REMOVED_TITLE": "Scripts Eliminados",
+  "SCRIPTS_CREATED_MSG": "Los scripts se crearon con éxito",
+  "SCRIPTS_CREATED_TITLE": "Scripts Creados",
+  "RESILIENCE_SCORE": "Puntaje de Resiliencia",
+  "RESILIENCE": "Resiliencia",
+  "MACHINES": "Máquinas",
+  "SIMULATION": {
+    "CREATED_AT": "Creado en",
+    "PHASES": "Fases",
+    "START_OF_EXECUTION": "Inicio de la Ejecución",
+    "SCENARIOS": "Escenarios",
+    "MACHINES": "Máquinas",
+    "DETECTIONS": "Detecciones",
+    "INFECTIONS": "Infecciones",
+    "RESILIENCE_LEGEND": "El Puntaje de Resiliencia se calcula a partir de los puntajes de infección y detección. Mide qué tan bien su empresa no solo previene ataques, sino que responde a ellos.\nEl puntaje se categoriza en Crítico (<30%), Bajo (<60%), Medio (<80%) y Alto (>=80%) según el porcentaje que alcance. Cuanto mayor sea el porcentaje, mejor.",
+    "DETECTIONS_LEGEND": "El Puntaje de Detección se calcula a partir de la respuesta de la empresa a los diferentes escenarios y resultados.\nEl puntaje se categoriza en Crítico (<30%), Bajo (<60%), Medio (<80%) y Alto(>=80%) según el porcentaje que alcance. Cuanto mayor sea el porcentaje, mejor.",
+    "INFECTIONS_LEGEND": "El Puntaje de Infección se calcula a partir de los resultados de cada escenario en la simulación. Con Bypass y Partial Bypass considerados como una infección exitosa.\nEl puntaje se categoriza en Crítico (>=80%), Alto (>=60%), Medio (>=30%) y Bajo (<30%) según el porcentaje que alcance. Cuanto menor sea el porcentaje, mejor."
+  },
+  "low": "Bajo",
+  "medium": "Medio",
+  "high": "Alto",
+  "CREATE_FIX": "Crear mitigación",
+  "CREATE_FIX_MODAL": {
+    "TITLE": "Crear mitigación"
+  },
+  "APT_FIX_FORM": {
+    "NAME": {
+      "LABEL": "Nombre",
+      "HELPER": "El nombre para identificar la mitigación"
+    },
+    "RELATED_MITRE": {
+      "LABEL": "Mitre Relacionado",
+      "HELPER": "El/los ID(s) de las Técnicas Mitre que aborda esta mitigación"
+    },
+    "TAGS": {
+      "LABEL": "Etiquetas",
+      "HELPER": "Agrupaciones a las que pertenece la mitigación"
+    },
+    "IMPORTANCE": {
+      "LABEL": "Gravedad",
+      "HELPER": "Qué tan relevante es la mitigación para asegurar la seguridad del endpoint"
+    },
+    "DESCRIPTION": {
+      "LABEL": "Descripción",
+      "HELPER": "Escriba una breve descripción de la mitigación"
+    },
+    "SHELLTYPE": {
+      "LABEL": "Tipo de Shell",
+      "HELPER": "El tipo de Shell afectará qué hosts pueden ejecutar esta mitigación según su sistema operativo"
+    },
+    "SCRIPT": {
+      "LABEL": "Script"
+    },
+    "TEST": {
+      "LABEL": "Prueba",
+      "HELPER": "Este comando verificará si la mitigación ya está en su lugar o si necesita ser aplicada. Permite a Batuta auditar continuamente los hosts para esta vulnerabilidad y asegurar que las vulnerabilidades sigan mitigadas."
+    },
+    "ROLLBACK": {
+      "LABEL": "Revertir"
+    }
+  },
+  "SEE_HOST_DETAIL": "Ver Detalle del Host",
+  "APPLY_ALL_PENDING": "Aplicar Todos los Pendientes",
+  "EDIT_FIX": {
+    "LABEL": "Editar mitigación",
+    "TITLE": "Editar Mitigación: {{fixName}}"
+  },
+  "APPLY_FIX": "Aplicar mitigación",
+  "ROLLBACK_FIX": "Revertir mitigación",
+  "HOST_NAME": "Nombre del Host",
+  "MITRE_TECHNIQUE": "Técnica Mitre",
+  "READ_MORE_ON_MITRE": "Leer más en el Sitio Web de Mitre",
+  "ROLLBACK_ON_ALL_CONFIRMATION": {
+    "TITLE": "Revertir {{fixName}}",
+    "HELPER": "Está a punto de revertir la mitigación en todos los hosts.\n\n¿Está seguro de que desea continuar?",
+    "BUTTON": "Confirmar"
+  },
+  "DELETE_FIX_CONFIRMATION": {
+    "TITLE": "Eliminar mitigación: {{fixName}}",
+    "HELPER": "Está a punto de eliminar la mitigación \"{{fixName}}\". Esta acción no se puede deshacer. Todos los registros de mitigaciones aplicadas y rollbacks asociados también serán eliminados.\n\n¿Está seguro de que desea continuar?",
+    "BUTTON": "Eliminar"
+  },
+  "HOSTS_APPLIED_TO": "Hosts aplicados",
+  "LAST_CHECKED": "Última Revisión",
+  "critical": "Crítico",
+  "MISSING_FIXES": "Mitigaciones Faltantes",
+  "APPLIED_FIXES": "Mitigaciones Aplicadas",
+  "IMPORTANCE": "Gravedad",
+  "APPLIED_ON": "Aplicado En",
+  "APPLY_ALL": "Aplicar Todo",
+  "ROLLBACK_ALL_FIXES": "Revertir Todas las Mitigaciones",
+  "MISSING_HIGH": "Faltante Alto",
+  "MISSING_LOW": "Faltante Bajo",
+  "MISSING_MEDIUM": "Faltante Medio",
+  "APT_MITIGATIONS": "Mitigación de APT",
+  "HOSTS_BY_TOTAL_UNAPPLIED_FIXES": "Hosts por Total de Mitigaciones No Aplicadas",
+  "FIXES_NOT_APPLIED_BY_IMPORTANCE": "Mitigaciones No Aplicadas por Gravedad",
+  "ENDPOINTS_WITH_UNAPPLIED_FIXES": "Endpoints con Mitigaciones de Alto Impacto No Aplicadas",
+  "FIXES_NOT_APPLIED": "Mitigaciones No Aplicadas",
+  "ROLLBACK_ON_ALL": "Revertir en todos",
+  "DELETE_FIX": "Eliminar mitigación",
+  "DELETE_FIX_DESCRIPTION": "Esto eliminará la mitigación actual de su Biblioteca de Mitigaciones y revertirá sus efectos en todos los hosts actualmente afectados.",
+  "ROLLBACK_ON_ALL_DESCRIPTION": "Revertir esta mitigación en todos los hosts actualmente afectados.",
+  "RUN_FIX_VALIDATION_DESCRIPTION": "Selecciona los hosts en los que deseas ejecutar la prueba de mitigación.",
+  "DESCRIPTION": "Descripción",
+  "FIX_NAME": "Nombre de la Mitigación",
+  "FIX_TAGS": "Etiquetas",
+  "APPLY_TO_MORE": "Aplicar a mas Hosts",
+  "FIX_APPLIED_ALERT": "La mitigación se ha aplicado con éxito",
+  "FIX_APPLIED": "Mitigación aplicada",
+  "FIXES_APPLIED_ALER": "Las mitigaciones se han aplicado con éxito",
+  "FIXES_APPLIED": "Mitigaciones aplicadas",
+  "FIX_ROLLBACKED_ALERT": "La mitigación se ha revertido con éxito",
+  "FIX_ROLLBACKED": "Mitigación revertida",
+  "FIXES_ROLLBACKED_ALERT": "Las mitigaciones se han revertido con éxito",
+  "FIXES_ROLLBACKED": "Mitigaciones revertidas",
+  "FIX_DELETED_ALERT": "La mitigación se ha eliminado con éxito",
+  "FIX_DELETED": "Mitigación eliminada",
+  "FIXES_DELETED_ALERT": "Las mitigaciones se han eliminado con éxito",
+  "NO_FIXES_APPLIED": "No se han aplicado mitigaciones",
+  "NO_FIXES_PENDING": "No hay mitigaciones pendientes",
+  "OS": "SO",
+  "KERNEL": "Versión del Kernel",
+  "ACTION": "Acción",
+  "CREATE_FIX_ALERT": {
+    "MESSAGE": "La nueva mitigación se ha creado con éxito",
+    "TITLE": "Mitigación creada",
+    "INFO_MESSAGE": "La prueba de mitigación se ejecutará automáticamente en los hosts que estén conectados y compartan el mismo tipo de shell",
+    "INFO_TITLE": "Test en Ejecución"
+  },
+  "CREATE_FIX_ALERT_ERROR": {
+    "MESSAGE": "Un Error ocurrió durante la creación de la mitigación",
+    "TITLE": "Error de creación"
+  },
+  "EDIT_FIX_ALERT": {
+    "MESSAGE": "La mitigación se ha editado con éxito",
+    "TITLE": "Mitigación editada"
+  },
+  "EDIT_FIX_ALERT_ERROR": {
+    "MESSAGE": "Un Error ocurrió durante la edición de la mitigación",
+    "TITLE": "Error de edición"
+  },
+  "DELETE_FIX_ALERT": {
+    "MESSAGE": "La mitigación se ha eliminado con éxito",
+    "TITLE": "Mitigación eliminada"
+  },
+  "DELETE_FIX_ALERT_ERROR": {
+    "MESSAGE": "Un Error ocurrió durante la eliminación de la mitigación",
+    "TITLE": "Error al eliminar"
+  },
+  "ROLLBACK_ALL_FIXES_CONFIRMATION": {
+    "TITLE": "Revertir todas las mitigaciones",
+    "HELPER": "Está a punto de revertir todas las mitigaciones en este host. ¿Está seguro de que desea continuar?",
+    "BUTTON": "Revertir"
+  },
+  "APPLY_ALL_FIX_CONFIRMATION": {
+    "TITLE": "Aplicar todas las mitigaciones",
+    "HELPER": "Está a punto de aplicar todas las mitigaciones en este host. ¿Está seguro de que desea continuar?",
+    "BUTTON": "Aplicar"
+  },
+  "TAGS": "Etiquetas",
+  "APPLY_TO_SELECTED": "Aplicar a los seleccionados",
+  "IP_ADDRESS": "Dirección IP",
+  "STATUS": "Estado",
+  "NO_HOST_APPLIED": "No hay aplicaciones en los hosts",
+  "ROLLBACK_ON_ALL_ALERT": {
+    "TITLE": "Mitigación revertida",
+    "MESSAGE": "La mitigación fue revertida con exito en todos los hosts"
+  },
+  "ROLLBACK_ON_ALL_ALERT_ERROR": {
+    "TITLE": "Error al Revertir",
+    "MESSAGE": "La Mitigación no pudo revertirse en todos los hosts"
+  },
+  "APPLIED_FIX_ALERT": {
+    "MESSAGE": "La mitigación fue aplicada con exito en todos los hosts",
+    "TITLE": "Mitigación aplicada"
+  },
+  "APPLIED_FIX_ALERT_ERROR": {
+    "MESSAGE": "Ocurrió un error al querer aplicar la mitigación. \n\nPor favor intente nuevamente mas tarde",
+    "TITLE": "No se pudo aplicar la mitigación"
+  },
+  "RUN_TEST": "Ejecutar prueba",
+  "RUN_TEST_ALERT": {
+    "MESSAGE": "La ejecución de la prueba ha comenzado en los hosts disponibles",
+    "TITLE": "Prueba comenzada"
+  },
+  "RUN_TEST_ALERT_ERROR": {
+    "MESSAGE": "Hubo un error en la ejecución de la prueba",
+    "TITLE": "Error de ejecución en la prueba"
+  },
+  "RUN_TEST_CONFIRMATION": {
+    "HELPER": "Quiere comenzar la prueba en todos los hosts que esten disponibles?",
+    "TITLE": "Ejecutar Prueba",
+    "BUTTON": "Comenzar"
+  },
+  "FIX_ROLLBACK_TITLE": "Proceso iniciado",
+  "FIX_ROLLBACK_MSG": "El comando de reversión ha sido enviado, por favor espere a que el proceso termine.",
+  "FIX_APPLIED_TITLE": "Proceso iniciado",
+  "FIX_APPLIED_MSG": "La mitigación ha sido enviada, por favor espere a que el proceso termine.",
+  "NO_FIXES_MISSING": "No hay mitigaciones faltantes",
+  "SELECTED_MITIGATION": "Mitigación Seleccionada",
+  "RUN_TEST_SUCCESS_DESC": "La validación ha sido enviada a los hosts seleccionados",
+  "RUN_TEST_TITLE": "Validación comenzada",
+  "APPLY": "Aplicar",
+  "APPLY_ALL_MITIGATIONS": "Aplicar todas las mitigaciones",
+  "APPLY_ALL_MITIGATIONS_DESCRIPTION": "Esta acción permite aplicar todas las mitigaciones pendientes en el host",
+  "ROLLBACK_ALL_MITIGATIONS": "Revertir todas las mitigaciones",
+  "ROLLBACK_ALL_MITIGATIONS_DESCRIPTION": "Esta acción permite revertir todas las mitigaciones aplicadas en el host",
+  "RUN_YOUR_FIRST_SCAN": "Ejecute su primera prueba",
+  "RUN_YOUR_FIRST_SCAN_MESSAGE": "Actualmente no hay hosts para mostrar, le sugerimos que empiece por ejecutar una prueba en los hosts que se encuentran conectados.",
+  "HOSTS_PENDING_APPLIED": "Hosts Pendientes/Aplicados",
+  "SHELL_TYPE": "Tipo de Shell",
+  "MITIGATION_STATUS": "Estado de la Mitigación",
+  "MITIGATION_NAME": "Nombre de la Mitigación",
+  "APPLY_MITIGATIONS": "Aplicar Mitigaciones",
+  "ROLLBACK_MITIGATIONS": "Revertir Mitigaciones",
+  "APPLY_SUCCESS_DESC": "La mitigación se ha aplicado correctamente",
+  "APPLY_SUCCESS_TITLE": "Mitigación aplicada",
+  "APPLY_ALERT_ERROR_MESSAGE": "No se pudo aplicar la mitigación, intente nuevamente más tarde",
+  "APPLY_ALERT_ERROR_TITLE": "Error al aplicar la mitigación",
+  "ROLLBACK_SUCCESS_DESC": "La mitigación se ha revertido correctamente",
+  "ROLLBACK_SUCCESS_TITLE": "Mitigación revertida",
+  "ROLLBACK_ALERT_ERROR_MESSAGE": "No se pudo revertir la mitigación, intente nuevamente más tarde",
+  "ROLLBACK_ALERT_ERROR_TITLE": "Error al revertir la mitigación",
+  "APPLY_MITIGATION": "Aplicar mitigación",
+  "ROLLBACK_MITIGATION": "Revertir mitigación",
+  "APPLY_MITIGATION_DESCRIPTION": "Esta acción permite la aplicación de la mitigación seleccionada al host",
+  "ROLLBACK_MITIGATION_DESCRIPTION": "Esta acción permite la reversión de la mitigación seleccionada al host",
+  "TEST_MITIGATION": "Probar mitigación",
+  "TEST_MITIGATION_DESCRIPTION": "Esta acción permite la validación de la mitigación seleccionada en el host",
+  "HOST_TO_TEST": "Hosts para probar mitigación",
+  "HOST_TO_APPLY": "Hosts para aplicar mitigación",
+  "HOST_TO_ROLLBACK": "Hosts para revertir mitigación",
+  "HOST_AFFECTED": "Hosts afectados",
+  "MITIGATION_POLICIES": "Políticas de Mitigación",
+  "POLICY_NAME": "Nombre de la Política",
+  "EXECUTION_TYPE": "Tipo de Ejecución",
+  "HOSTS_AFFECTED": "Hosts Afectados",
+  "FREQUENCY": "Frecuencia",
+  "CREATED_AT": "Creado el",
+  "MODIFIED_AT": "Modificado el",
+  "MODIFIED_BY": "Moficado por",
+  "NO_MITIGATIONS": "No hay mitigaciones para mostrar",
+  "DELETE_POLICY": "Borrar Política",
+  "DELETE_POLICY_DESCRIPTION": "La póliza seleccionada se borrará y si hay procesos pendientes, se moverán al estado Cancelado",
+  "DETAILS_POLICY": "Detalles de la política",
+  "DELETE_POLICY_ALERT": {
+    "MESSAGE": "La política se ha borrado correctamente",
+    "TITLE": "Política Borrada"
+  },
+  "DELETE_POLICY_ALERT_ERROR": {
+    "MESSAGE": "Algo salió mal, intente nuevamente más tarde",
+    "TITLE": "Error al eliminar la política"
+  },
+  "RUN_POLICY": {
+    "MESSAGE": "Comenzará la ejecución de la politica en cada hosts del grupo asociado",
+    "TITLE": "Política Ejecutada",
+    "LABEL": "Ejecutar política"
+  },
+  "RUN_POLICY_ERROR": {
+    "MESSAGE": "Algo salió mal, intente nuevamente más tarde",
+    "TITLE": "Error al ejecutar la política"
+  },
+  "DELETE_POLICY_CONFIRMATION": {
+    "TITLE": "Borrar política",
+    "HELPER": "Está seguro de eliminar la política: \"{{policyName}}\". Esta acción no puede deshacerse.\n\n Está seguro que desea continuar?",
+    "BUTTON": "Borrar"
+  },
+  "RUN_POLICY_CONFIRMATION": {
+    "TITLE": "Comenzar la ejecución",
+    "HELPER": "¿Desea iniciar una nueva ejecución de la política {{policyName}} sobre el grupo de equipos seleccionado?",
+    "BUTTON": "Comenzar"
+  },
+  "EDIT_POLICY": "Editar Política",
+  "NEW_MITIGATION_POLICY": "Nueva Política de Mitigación",
+  "EDIT_MITIGATION_POLICY": "Editar Política de Mitigación",
+  "AFFECTED_GROUP": "Grupo Afectado",
+  "TEST": "Prueba",
+  "ROLLBACK": "Revertir",
+  "MINUTES": "Minutos",
+  "HOURS": "Horas",
+  "DAYS": "Días",
+  "WEEKS": "Semanas",
+  "MONTHS": "Meses",
+  "ACTION_TO_EXECUTE": "Acción a Ejecutar",
+  "DISCARD_POLICY": "Descartar Política",
+  "CREATE_POLICY": "Crear Política",
+  "MITIGATION_DESCRIPTION": "Descripción de la Mitigación",
+  "DISABLE_POLICY": "Deshabilitar Política",
+  "ENABLE_POLICY": "Habilitar Política",
+  "DISABLE_POLICY_CONFIRMATION": {
+    "TITLE": "Deshabilitar Política",
+    "HELPER": "Está a punto de deshabilitar la política: \"{{policyName}}\". \n\nEstá seguro que desea continuar?",
+    "BUTTON": "Deshabilitar"
+  },
+  "ENABLE_POLICY_CONFIRMATION": {
+    "TITLE": "Habilitar Política",
+    "HELPER": "Está a punto de habilitar la política: \"{{policyName}}\". \n\nEstá seguro que desea continuar?",
+    "BUTTON": "Habilitar"
+  },
+  "CHANGE_STATUS": {
+    "MESSAGE": "El estado de la política se ha actualizado correctamente",
+    "TITLE": "Estado de la Política Actualizado"
+  },
+  "CHANGE_STATUS_ERROR": {
+    "MESSAGE": "Algo salió mal, intente nuevamente más tarde",
+    "TITLE": "Error Al cambiar el Estado"
+  },
+  "MITIGATIONS": "Mitigaciones",
+  "MINUTE_HOUR_DAY": "Minutos, horas, días, semanas, meses",
+  "MAX_MIN_MINUTES": "Máximo 64800 y mínimo 30 minutos",
+  "MAX_MIN_HOURS": "Máximo 1080 y mínimo 1 horas",
+  "MAX_MIN_DAYS": "Máximo 45 y mínimo 1 días",
+  "MAX_MIN_WEEKS": "Máximo 6 y mínimo 1 semanas",
+  "MAX_MIN_MONTHS": "Máximo 1 y mínimo 1 meses",
+  "ERROR_TIME": "Valor fuera del rango permitido: ",
+  "UPDATE_POLICY_SUCCESS": {
+    "MESSAGE": "La política ha sido debidamente actualizada",
+    "TITLE": "Política Actualizada"
+  },
+  "UPDATE_POLICY_ERROR": {
+    "MESSAGE": "Algo salío mal revise el formulario e inténtelo nuevamente",
+    "TITLE": "Error de actualización de Política"
+  },
+  "SCHEDULE": "Calendarización",
+  "WHAT_IS_A_MITIGATION_POLICY": "Que es un política de mitigación?",
+  "CREATE_POLICY_SUCCESS": {
+    "MESSAGE": "La Política fue creada satisfactoriamente",
+    "TITLE": "Política Creada"
+  },
+  "CREATE_POLICY_ERROR": {
+    "MESSAGE": "lgo salío mal revise el formulario e inténtelo nuevamente",
+    "TITLE": "Error al crear la Política"
+  },
+  "FIXES_ROLLBACK_MSG": "El proceso de reversión de las mitigaciones ha iniciado exitosamente",
+  "FIXES_ROLLBACK_TITLE": "Proceso de reversión iniciado",
+  "FIXES_APPLIED_MSG": "El proceso de aplicación de las mitigaciones ha iniciado exitosamente",
+  "FIXES_APPLIED_TITLE": "Proceso de aplicación iniciado",
+  "NO_FIXES_APPLIED_MSG": "No hay mitigaciones pendientes para aplicar",
+  "NO_FIXES_APPLIED_TITLE": "No hay mitigaciones para aplicar",
+  "NO_FIXES_PENDING_MSG": "No hay mitigaciones pendientes para revertir",
+  "NO_FIXES_PENDING_TITLE": "No hay mitigaciones para revertir",
+  "IS_REQUIRED_MAX_LENGTH_256": "Es requerido y debe tener un máximo de 256 caracteres",
+  "MAX_LENGTH_1000": "El máximo permitido es de 1000 caracteres",
+  "IS_REQUIRED": "Es requerido",
+  "NO_HOSTS_WITH_UNAPPLIED_FIXES": "No se econtraron Hosts con mitigaciones pendientes",
+  "TEST_HELPER": "Esta acción disparará el script de testeo de cada mitigación en los host del grupo afectado",
+  "APPLY_HELPER": "Esta acción disparará el script de aplicación de cada mitigación en los host del grupo afectado",
+  "ROLLBACK_HELPER": "Esta acción disparará el script de reversión de cada mitigación en los host del grupo afectado",
+  "MITIGATION_POLICY": "Política de Mitigación",
+  "MITIGATION": "Mitigación"
+}

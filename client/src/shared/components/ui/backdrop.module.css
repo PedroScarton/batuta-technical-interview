@@ -1,0 +1,23 @@
+.backdrop {
+  @apply fixed left-0 top-0 z-max h-screen w-full bg-neutral-900 bg-opacity-35;
+}
+
+.backdrop.z-index-10 {
+  @apply z-10;
+}
+
+.backdrop.z-index-20 {
+  @apply z-20;
+}
+
+.backdrop.z-index-30 {
+  @apply z-30;
+}
+
+.backdrop.z-index-40 {
+  @apply z-40;
+}
+
+.backdrop.z-index-max {
+  z-index: 60;
+}

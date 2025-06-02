@@ -1,0 +1,34 @@
+.status {
+  @apply mx-auto text-center;
+  max-width: 50rem;
+}
+
+.loadingCtn {
+  @apply flex flex-1 justify-center align-middle;
+}
+
+.container {
+  @apply w-full p-4;
+}
+
+.btnContainer {
+  @apply mx-auto mt-4 w-48;
+}
+
+.text {
+  @apply text-sm font-extralight;
+}
+.span {
+}
+
+.margin {
+  @apply my-8 text-center;
+}
+
+.biggerText {
+  @apply text-base font-semibold;
+}
+
+.header {
+  @apply uppercase tracking-widest;
+}

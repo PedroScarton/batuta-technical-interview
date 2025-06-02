@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="manifest" href="/assets/site.webmanifest?v=2" />
+    <meta name="application-name" content="Batuta" />
+    <meta name="apple-mobile-web-app-title" content="Batuta" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="/assets/browserconfig.xml?v=2" />
+    <meta name="theme-color" content="#3db065" />
+
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png?v=2" />
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg?v=2" color="#215e35" />
+    <link rel="shortcut icon" href="/assets/favicon.ico?v=2" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Workaround for undefined global error -->
+    <script>
+      var global = global || window;
+    </script>
+
+    <!-- TITLE -->
+    <title>Batuta Cyber Defense Command and Control</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="backdrop-hook"></div>
+    <div id="modal-hook"></div>
+    <div id="drawer-hook"></div>
+    <div id="alert-hook"></div>
+    <div id="root">
+      <div
+        style="
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 10;
+          height: 100vh;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.25);
+        "
+      >
+        <div
+          style="
+            display: flex;
+            height: 100vh;
+            align-content: center;
+            justify-content: center;
+            padding-top: 16rem;
+          "
+        >
+          <style>
+            @keyframes loader {
+              0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+              }
+              100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+              }
+            }
+            @keyframes circleAnimation {
+              0% {
+                stroke-dasharray: 1px, 200px;
+                stroke-dashoffset: 0;
+              }
+              50% {
+                stroke-dasharray: 100px, 200px;
+                stroke-dashoffset: -15px;
+              }
+              100% {
+                stroke-dasharray: 100px, 200px;
+                stroke-dashoffset: -125px;
+              }
+            }
+          </style>
+          <span
+            style="
+              display: inline-block;
+              color: #1976d2;
+              -webkit-animation: loader 1.4s linear infinite;
+              animation: loader 1.4s linear infinite;
+              width: 40px;
+              height: 40px;
+            "
+            role="progressbar"
+          >
+            <svg style="display: block; vertical-align: middle" viewBox="22 22 44 44">
+              <circle
+                style="
+                  stroke: currentColor;
+                  stroke-dasharray: 80px, 200px;
+                  stroke-dashoffset: 0;
+                  -webkit-animation: circleAnimation 1.4s ease-in-out infinite;
+                  animation: circleAnimation 1.4s ease-in-out infinite;
+                "
+                cx="44"
+                cy="44"
+                r="20.2"
+                fill="none"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

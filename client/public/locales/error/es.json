@@ -1,0 +1,625 @@
+{
+  "ERROR_TITLE": "algo salió mal",
+  "ERROR_SUBTITLE": "No se preocupe, ya hemos enviado un correo electrónico a nuestro equipo de soporte.",
+  "ERROR": {
+    "TITLE": "Algo salió mal",
+    "MESSAGE": "Por favor intenta de nuevo más tarde."
+  },
+  "GO_BACK": "Regresar",
+  "MAIN_PAGE": "Página principal",
+  "AUTH_FAILED": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "Hubo un error autenticando tu petición."
+  },
+  "NOT_FOUND": {
+    "TITLE": "No encontrado",
+    "MESSAGE": "{{name}} no encontrado."
+  },
+  "ALREADY_EXISTS": {
+    "TITLE": "Hubo un conflicto",
+    "MESSAGE": "{{name}} ya existe."
+  },
+  "NOT_AVAILABLE": {
+    "TITLE": "No disponible",
+    "MESSAGE": "{{name}} no está disponible."
+  },
+  "NOT_VALID": {
+    "TITLE": "No válido",
+    "MESSAGE": "{{name}} no válido."
+  },
+  "NOT_SUPPORTED": { "TITLE": "No válido", "MESSAGE": "{{name}} no es válido." },
+  "NOT_READY": { "TITLE": "No listo", "MESSAGE": "{{name}} no está listo." },
+  "NOT_SET": {
+    "TITLE": "No configurado",
+    "MESSAGE": "Tu tenant no está configurado para esta funcionalidad."
+  },
+  "MAX_ELEMENTS_EXCEEDED": {
+    "TITLE": "Máximo de {{name}}s",
+    "MESSAGE": "No puedes crear más de {{max}} {{name}}s."
+  },
+  "EMPTY_LIST": { "TITLE": "Lista vacía", "MESSAGE": "La lista de {{name}} está vacía." },
+  "MAX_TENANT": {
+    "TITLE": "Máximo de {{name}}s por tenant",
+    "MESSAGE": "Has alcanzado el máximo de {{max}} {{name}}s por tenant."
+  },
+  "MAX_LENGTH": {
+    "TITLE": "Demasiado largo",
+    "MESSAGE": "El largo máximo de {{name}} es {{max}}."
+  },
+  "MAX_ASSIGNATIONS": {
+    "TITLE": "Demasiadas asignaciones",
+    "MESSAGE": "No puedes asignar más de {{max}} {{name}}s en una misma acción."
+  },
+  "SERVER_ERROR": {
+    "TITLE": "Error interno",
+    "MESSAGE": "Ocurrió un error interno en el servidor. Intenta más tarde."
+  },
+  "INTERNAL_SERVER_ERROR": {
+    "TITLE": "Error interno",
+    "MESSAGE": "Ocurrió un error interno en el servidor. Intenta más tarde."
+  },
+  "CROWDSTRIKE_TOKEN_ERROR": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "No se pudo obtener el token de Crowdstrike"
+  },
+  "CROWDSTRIKE_COMMUNICATION_ERROR": {
+    "TITLE": "Error de comunicación",
+    "MESSAGE": "No pudimos comunicarnos con Crowdstrike"
+  },
+  "CROWDSTRIKE_DEVICE_CONNECTION_ERROR": {
+    "TITLE": "Error de conexión",
+    "MESSAGE": "No pudimos conectarnos al dispositivo"
+  },
+  "CROWDSTRIKE_AUTHENTICATION_ERROR": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "Acceso denegado por token inválido"
+  },
+  "CROWDSTRIKE_INVALID_DEVICE": {
+    "TITLE": "Dispositivo no válido",
+    "MESSAGE": "No se encontró el dispositivo en Crowdstrike"
+  },
+  "ROWDSTRIKE_INVALID_DEVICE": {
+    "TITLE": "Dispositivo no válido",
+    "MESSAGE": "No se encontró el dispositivo en Crowdstrike"
+  },
+  "CROWDSTRIKE_EXECUTION_ERROR": {
+    "TITLE": "Error de ejecución",
+    "MESSAGE": "No se pudo enviar el comando al dispositivo"
+  },
+  "PENTESTOOLS_COMMUNICATION_ERROR": {
+    "TITLE": "Error de comunicación",
+    "MESSAGE": "No pudimos comunicarnos con PentestTools"
+  },
+  "RPORT_ERROR": {
+    "TITLE": "Error de conexión",
+    "MESSAGE": "No se pudo establecer conexión con el servicio de agentes de Batuta"
+  },
+  "JIRA_UPDATING_ERROR": {
+    "TITLE": "Error actualizando",
+    "MESSAGE": "No pudimos actualizar el estatus de la incidencia"
+  },
+  "JIRA_CREATING_ERROR": {
+    "TITLE": "Error creando",
+    "MESSAGE": "No pudimos crear la incidencia"
+  },
+  "JIRA_CREATING_COMMENT_ERROR": {
+    "TITLE": "Error creando comentario",
+    "MESSAGE": "No pudimos agregar el comentario a la incidencia"
+  },
+  "JIRA_SEARCHING_ERROR": {
+    "TITLE": "Error de búsqueda",
+    "MESSAGE": "No pudimos encontrar la incidencia"
+  },
+  "APT_TOKEN_ERROR": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "No pudimos obtener el token de APT"
+  },
+  "INVALID_IMAGE": {
+    "TITLE": "Imagen inválida",
+    "MESSAGE": "Dimensiones erróneas de la imagen para el PDF"
+  },
+  "NOT_AUTHENTICATED": {
+    "TITLE": "No autenticado",
+    "MESSAGE": "Usuario no autenticado"
+  },
+  "TELEGRAM_USER_NOT_FOUND": {
+    "TITLE": "Usuario no encontrado",
+    "MESSAGE": "No encontramos al usuario de Telegram."
+  },
+  "PARAMS_WRONG_TYPE": {
+    "TITLE": "Tipo erróneo",
+    "MESSAGE": "Por favor ingrese parámetros válidos"
+  },
+  "INVALID_COMMAND_OUTPUT": {
+    "TITLE": "Salida errónea",
+    "MESSAGE": "El stdout del comando de check status no fue válido"
+  },
+  "PROTECTED_DOCUMENT": {
+    "TITLE": "Protegido",
+    "MESSAGE": "No se pueden modificar documentos protegidos"
+  },
+  "FILE_MISSING_ON_BODY": {
+    "TITLE": "Archivo faltante",
+    "MESSAGE": "Debes proveer un archivo en el cuerpo de la petición"
+  },
+  "ERROR_UPLOADING_FILE": {
+    "TITLE": "Error subiendo",
+    "MESSAGE": "Ha ocurrido un error subiendo el archivo"
+  },
+  "INVALID_PLATFORM_CONFIG": {
+    "TITLE": "Configuración errónea",
+    "MESSAGE": "La plataforma debe contar con \"servicename\" o \"commandline\""
+  },
+  "PLATFORM_WITHOUT_TEMPALTE": {
+    "TITLE": "Sin template",
+    "MESSAGE": "La plataforma debe tener un template"
+  },
+  "DEVICE_ALREADY_REGISTERED": {
+    "TITLE": "Ya registrado",
+    "MESSAGE": "El dispositivo ya está registrado"
+  },
+  "DEVICE_NOT_ELIGIBLE_FOR_ACTION": {
+    "TITLE": "No válido",
+    "MESSAGE": "El dispositivo no es válido para la acción seleccionada"
+  },
+  "DETECTION_ALREADY_SENT": {
+    "TITLE": "Ya enviado",
+    "MESSAGE": "La detección fue enviada previamente"
+  },
+  "AD_ALREADY_IN_ACTION": {
+    "TITLE": "Ya en acción",
+    "MESSAGE": "El AD ya existe en la acción seleccionada"
+  },
+  "AD_NOT_IN_ACTION": {
+    "TITLE": "No en acción",
+    "MESSAGE": "El AD no está en la acción seleccionada"
+  },
+  "INVALID_CRON_TYPE": {
+    "TITLE": "Error de CRON",
+    "MESSAGE": "El tipo de CRON es inválido"
+  },
+  "ACTION_EXPIRED": {
+    "TITLE": "Acción expirada",
+    "MESSAGE": "La acción pedida ha expirado"
+  },
+  "INVALID_AUTO_CONTAINMENT": {
+    "TITLE": "Error en auto-aislar",
+    "MESSAGE": "El dispositivo no es elegible para remover el automáticamente el aislamiento"
+  },
+  "EMPTY_DEVICES_IDS": {
+    "TITLE": "Sin dispositivos",
+    "MESSAGE": "No se pudieron encontrar dispositivos válidos para la entrada recibida"
+  },
+  "IOC_TAGS_NOT_FOUND": {
+    "TITLE": "Sin etiquetas",
+    "MESSAGE": "No se encontraron etiquetas válidas"
+  },
+  "INVALID_ALERT_LEVELS": {
+    "TITLE": "Niveles inválidos",
+    "MESSAGE": "Los niveles de alerta deben ser una lista de números entre 1 y 15"
+  },
+  "INVALID_ALERT_BODY": {
+    "TITLE": "Contenido inválido",
+    "MESSAGE": "El contenido de la alerta no es válido"
+  },
+  "ALERT_LEVEL_UNDERESTIMATE": {
+    "TITLE": "Nivel inválido",
+    "MESSAGE": "El nivel de la alerta está subestimado"
+  },
+  "NOT_SAME_KERNEL": {
+    "TITLE": "Diferentes kernel",
+    "MESSAGE": "No todos los dispositivos tienen el mismo kernel"
+  },
+  "PLATFORM_NOT_IN_CLIENT": {
+    "TITLE": "Platform no instalada",
+    "MESSAGE": "El cliente seleccionado no tiene instalada la plataforma correspondiente"
+  },
+  "OTT_EXPIRED": {
+    "TITLE": "OTT Expirado",
+    "MESSAGE": "El OTT(One Time Token) ha expirado"
+  },
+  "RPORT_INSTANCE_ERROR": {
+    "TITLE": "Error de instancia",
+    "MESSAGE": "La instancia de Agentes de Batuta no ha sido inicializada"
+  },
+  "INVALID_UNINSTALLING_CALL": {
+    "TITLE": "Error de desinstalación",
+    "MESSAGE": "El host no ha sido marcado como un candidato a ser eliminado"
+  },
+  "HOST_ALREADY_UNINSTALLING": {
+    "TITLE": "Ya desinstalando",
+    "MESSAGE": "El host ya se encuentra en proceso de desinstalación. Por favor espera a que termine el proceso o cancélalo."
+  },
+  "HOST_IS_CONNECTED": {
+    "TITLE": "Host conectado",
+    "MESSAGE": "No puedes eliminar a un host que está conectado a Batuta. Por favor desconéctalo primero."
+  },
+  "RPORT_CONFIG_ERROR": {
+    "TITLE": "Error de configuración",
+    "MESSAGE": "Configuración de Agentes de Batuta no encontrada"
+  },
+  "DEPLOYMENT_CLIENT_LIST_EMPTY": {
+    "TITLE": "Despliegue vacío",
+    "MESSAGE": "La lista de hosts está vacía"
+  },
+  "BATUTA_UNINSTALL_CLIENT_LIST_EMPTY": {
+    "TITLE": "Sin hosts válidos",
+    "MESSAGE": "La lista de clientes a desinstalar no tiene clientes conectados y no se está usando cola"
+  },
+  "BATUTA_UNINSTALL_CLIENTS_DISCONNECTED_AND_NOT_USE_QUEUE": {
+    "TITLE": "Sin hosts válidos",
+    "MESSAGE": "La lista de clientes a desinstalar no tiene clientes conectados y no se está usando cola"
+  },
+  "INVALID_ASSIGNATION": {
+    "TITLE": "Asignación inválida",
+    "MESSAGE": "El tipo del grupo no permite esta acción"
+  },
+  "INVALID_STATIC_GROUP_ACTION": {
+    "TITLE": "Acción inválida",
+    "MESSAGE": "Acción no válida para un grupo estático"
+  },
+  "INVALID_ACTION_TAGS": {
+    "TITLE": "Acción inválida",
+    "MESSAGE": "Acción inválida para etiquetas"
+  },
+  "MAX_TAGS_TENANT": {
+    "TITLE": "Etiquetas máximas",
+    "MESSAGE": "Has alcanzado el máximo de etiquetas por tenant"
+  },
+  "MAX_TAGS_HOST": {
+    "TITLE": "Etiquetas máximas",
+    "MESSAGE": "Has alcanzado el máximo de etiquetas para este host"
+  },
+  "MAX_TAG_CHARS": {
+    "TITLE": "Máximo de etiqueta",
+    "MESSAGE": "Has alcanzado el largo máximo de una etiqueta"
+  },
+  "JOB_COULD_NOT_RUN": {
+    "TITLE": "Tarea inválida",
+    "MESSAGE": "La tarea no pudo ser ejecutada en los hosts seleccionados"
+  },
+  "AUTOMOX_DEVICES_ERROR": {
+    "TITLE": "No encontrado",
+    "MESSAGE": "No se encontraron los dispositivos en Automox"
+  },
+  "AUTOMOX_DEVICE_ERROR": {
+    "TITLE": "No encontrado",
+    "MESSAGE": "No se encontró el dispositivo en Automox"
+  },
+  "HALCYON_ERROR": {
+    "TITLE": "Error de Anti-Ransomware",
+    "MESSAGE": "No nos pudimos comunicar con el servicio de Anti-Ransomware"
+  },
+  "HALCYON_AUTHENTICATION_ERROR": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "La accessKey de Halcyon es inválida"
+  },
+  "SERVICE_AUTHENTICATION_ERROR": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "Falló la autenticación con el servicio"
+  },
+  "DOCUMENTATION_PAGE_FORMAT_INVALID": {
+    "TITLE": "Formato inválido",
+    "MESSAGE": "La página de documentación es inválida"
+  },
+  "POLICY_COULD_NOT_RUN": {
+    "TITLE": "No se pudo ejecutar la política",
+    "MESSAGE": "La política no se pudo ejecutar en los hosts elegidos"
+  },
+  "DASHBOARD_METRIC_ERROR": {
+    "TITLE": "Error de métrica",
+    "MESSAGE": "No se pudo calcular el número de hosts fuera de cumplimiento"
+  },
+  "VCISO_TEXT_STREAMING_FAILED": {
+    "TITLE": "Error de conexión",
+    "MESSAGE": "Hubo un error de comunicación entre el servidor y el servicio de VCISO"
+  },
+  "CREDENTIALS_NOT_CONFIGURED": {
+    "TITLE": "Credenciales no configuradas",
+    "MESSAGE": "Las credenciales para la API de Batuta no están configuradas"
+  },
+  "ENTRAID_AUTHENTICATION_ERROR": {
+    "TITLE": "Error de autenticación",
+    "MESSAGE": "No se pudo autenticar con el servicio de EntraId"
+  },
+  "REPORT_ALREADY_AVAILABLE": {
+    "TITLE": "Ya disponible",
+    "MESSAGE": "El reporte ya está disponible"
+  },
+  "REPORT_CANNOT_BE_CANCELLED": {
+    "TITLE": "Error cancelando",
+    "MESSAGE": "El reporte no pudo ser cancelado"
+  },
+  "REPORT_CANNOT_BE_DELETED": {
+    "TITLE": "Error eliminando",
+    "MESSAGE": "El reporte no pudo ser eliminado"
+  },
+  "REPORT_CANNOT_BE_SEND": {
+    "TITLE": "Error enviando",
+    "MESSAGE": "El reporte no pudo ser enviado"
+  },
+  "TEMP_NOT_FOUND": {
+    "TITLE": "No encontrado",
+    "MESSAGE": "La opción expiró"
+  },
+  "DISPOSABLE_EMAIL": {
+    "TITLE": "Correo no válido",
+    "MESSAGE": "Los emails desechables no son válidos para generar cuentas de Batuta"
+  },
+  "USER_ID_NOT_FOUND": {
+    "TITLE": "Usuario no encontrado",
+    "MESSAGE": "No se encontró una cuenta de usuario con ese identificador."
+  },
+  "ROUTE": "Ruta",
+  "FIX_TAG": "Etiqueta de mitigación",
+  "FIX": "Mitigación",
+  "OPERATING_SYSTEM": "Sistema operativo",
+  "OS_VERSION": "Versión de SO",
+  "SCRIPT_TAG": "Etiqueta de Script",
+  "SCRIPT": "Script",
+  "TAG": "Etiqueta",
+  "OSUPDATE": "Actualización de SO",
+  "PLATFORM_TEMPLATE": "Template de plataforma",
+  "SERVICE_STATUS_HANDLER": "Controlador de estatus de servicio",
+  "DEFAULT_RTR_LIBRARY_FILE": "Archivo de librería RTR",
+  "NEW_CONFIG_FILE": "Nuevo archivo de configuración",
+  "TOOL": "Herramienta",
+  "CATEGORIES": "Categorías",
+  "SUBCATEGORIES": "Sub-categorías",
+  "QUESTIONS": "Preguntas",
+  "GTP_MODEL": "Modelo GPT",
+  "WAZUH_ACTIVE_RESPONSE": "Respuesta activa Wazuh",
+  "AUTOCONTAINMENT": "Auto-aislamiento",
+  "WEBHOOK": "Webhook",
+  "SERVICE": "Servicio",
+  "FUNCTIONALITY": "Funcionalidad",
+  "SCHEDULE": "Horario",
+  "DEVICE": "Dispositivo",
+  "QUERY": "Consulta",
+  "TOUR": "Tour",
+  "FILE": "Archivo",
+  "APT_FIX": "Mitigación",
+  "UNINSTALL_TASK": "Tarea de desinstalación",
+  "CONFIGURATION": "Configuración",
+  "SHELL_TYPE": "Tipo de shell",
+  "MITIGATION_ACTION": "Acción de mitigación",
+  "SOME_FIXES_ARE": "Algunas mitigaciones son",
+  "FIXES": "Mitigaciones",
+  "FIX_ACTION": "Acción de mitigación",
+  "EMAIL": "Correo",
+  "POLICY_EXECUTION": "Política de ejecución",
+  "AFTER_KEY_NAME": "Después de llave \"Name\"",
+  "SOME_HOSTS_ARE": "Algunos hosts son",
+  "AFTER_KEY_VENDOR": "Después de llave \"Vendor\"",
+  "UPDATE": "Actualización",
+  "FIELD": "Campo",
+  "HOST_SELECTION": "Selección de host",
+  "APPLICATION_POLICY_TASK": "Tarea de política de aplicaciones",
+  "LANGUAGE": "idioma",
+  "RULES": "Reglas",
+  "PARAMETER_SET": "Parámetros",
+  "COMMAND_SET": "Comandos",
+  "API_CONFIG_PARAMETER_SET": "Parámetros de configuración de API",
+  "API_CONFIG": "Configuración de API",
+  "OS": "SO",
+  "OS_VERSIONS": "Versión de SO",
+  "FILTER_FORMAT": "Formato de filtro",
+  "DATE_FILTER_VALUE": "Valor de filtro por fecha",
+  "QUERY_IDENTIFIER": "Identificador de consulta",
+  "REQUIRED": { "TITLE": "Requerido", "MESSAGE": "Falta una entrada requerida" },
+  "VALIDATION_ERROR": {
+    "TITLE": "Error de validación",
+    "MESSAGE": "El campo \"{{fieldName}}\" no cumple el criterio de {{type}}, esperaba {{expected}}"
+  },
+  "MINLENGTH": "largo mínimo",
+  "MAXLENGTH": "largo máximo",
+  "MIN": "mínimo",
+  "MAX": "máximo",
+  "ENUM": "opción válida",
+  "REGEXP": "formato",
+  "VALIDATION_ERROR_DUPLICATED": {
+    "TITLE": "Valor duplicado",
+    "MESSAGE": "Ya existe una entidad con ese valor de \"{{fieldName}}\". Por favor escoge otro"
+  },
+  "CROWDSTRIKE_RTR_ERROR": {
+    "TITLE": "Error de RTR",
+    "MESSAGE": "Ocurrió un error de Crowdstrike RTR"
+  },
+  "NOT_ALLOWED": { "TITLE": "No permitido", "MESSAGE": "La operación indicada no es permitida" },
+  "NOT_PERMITTED": { "TITLE": "No permitido", "MESSAGE": "Esta operación no está permitida" },
+  "ACCOUNT_DISABLED_OR_DELETED": {
+    "TITLE": "Cuenta inexistente",
+    "MESSAGE": "La cuenta indicada está deshabilitada o eliminada"
+  },
+  "PARAMS_REQUIRED": {
+    "TITLE": "Parámetros requeridos",
+    "MESSAGE": "Hacen falta algunos parámetros requeridos"
+  },
+  "ERROR_REMOVING_FILE": {
+    "TITLE": "Error quitando archivo",
+    "MESSAGE": "Hubo un error quitando el archivo"
+  },
+  "PLATFORM_API_NOT_AVAILABLE": {
+    "TITLE": "API no disponible",
+    "MESSAGE": "La plataforma API no está disponible"
+  },
+  "PLATFORM_UPDATE_NOT_VALID": {
+    "TITLE": "Actualización errónea",
+    "MESSAGE": "La actualización de plataforma es errónea"
+  },
+  "EMAIL_NOT_VALID": { "TITLE": "Correo erróneo", "MESSAGE": "El correo indicado es erróneo" },
+  "TOKEN_NOT_VALID": { "TITLE": "Token erróneo", "MESSAGE": "El token indicado es erróneo" },
+  "TYPE_NOT_VALID": { "TITLE": "Tipo erróneo", "MESSAGE": "El tipo indicado es erróneo" },
+  "INPUT_NOT_VALID": { "TITLE": "Entrada errónea", "MESSAGE": "La entrada indicada es erróneo" },
+  "DAYS_NOT_VALID": { "TITLE": "Días erróneos", "MESSAGE": "Los días indicados son erróneos" },
+  "START_HOUR_NOT_VALID": {
+    "TITLE": "Hora de inicio errónea",
+    "MESSAGE": "La hora de inicio indicada fue erróneo"
+  },
+  "END_HOUR_NOT_VALID": {
+    "TITLE": "Hora final errónea",
+    "MESSAGE": "La hora final indicada es errónea"
+  },
+  "DEVICE_NOT_VALID": {
+    "TITLE": "Device errónea",
+    "MESSAGE": "El dispositivo indicado es erróneo"
+  },
+  "DETECTION_NOT_VALID": {
+    "TITLE": "Detection errónea",
+    "MESSAGE": "La detección indicada es errónea"
+  },
+  "SEVERITIES_LIST_NOT_VALID": {
+    "TITLE": "Lista de severidades errónea",
+    "MESSAGE": "La lista de severidades indicada es errónea"
+  },
+  "CONFIGURATION_NOT_VALID": {
+    "TITLE": "Configuración errónea",
+    "MESSAGE": "La configuración indicada es errónea"
+  },
+  "CONTAINMENT_ACTION_NOT_VALID": {
+    "TITLE": "Acción de contención errónea",
+    "MESSAGE": "La acción de contención indicada es invalid"
+  },
+  "SCHEDULE_ALREADY_EXISTS": {
+    "TITLE": "Horario existente",
+    "MESSAGE": "El horario ya existe"
+  },
+  "CRON_ALREADY_EXISTS": { "TITLE": "Cron existente", "MESSAGE": "El Cron indicado ya existe" },
+  "ACTION_ALREADY_EXISTS": {
+    "TITLE": "Acción existente",
+    "MESSAGE": "El action ya existe"
+  },
+  "CS_ACTION_ALREADY_EXISTS": {
+    "TITLE": "Acción existente",
+    "MESSAGE": "La Crowdstrike action ya existe"
+  },
+  "CONSOLE_ALREADY_EXISTS": {
+    "TITLE": "Consola existente",
+    "MESSAGE": "La consola ya existe"
+  },
+  "WEBHOOK_ALREADY_EXISTS": {
+    "TITLE": "Webhook existente",
+    "MESSAGE": "El webhook ya existe"
+  },
+  "WAZUH_MANAGER_ALREADY_EXISTS": {
+    "TITLE": "Wazuh Manager existente",
+    "MESSAGE": "El Wazuh manager indicado ya existe"
+  },
+  "ALERT_ALREADY_EXISTS": { "TITLE": "Alert existente", "MESSAGE": "Esta alerta ya existe" },
+  "WAZUH_ACTIVE_RESPONSE_ALREADY_EXISTS": {
+    "TITLE": "Respuesta activa existente",
+    "MESSAGE": "La respuesta active de Wazuh ya existe"
+  },
+  "OS_NOT_SUPPORTED": {
+    "TITLE": "SO no compatible",
+    "MESSAGE": "El SO indicado no es compatible con Batuta actualmente"
+  },
+  "RPORT_HOST_NOT_FOUND": {
+    "TITLE": "Host no encontrado",
+    "MESSAGE": "El host de rport indicado no fue encontrado"
+  },
+  "HOST_NOT_ENABLED": {
+    "TITLE": "Host no habilitado",
+    "MESSAGE": "El host indicado no está habilitado"
+  },
+  "RPORT_HOST_DISCONNECTED": {
+    "TITLE": "Host desconectado",
+    "MESSAGE": "El agente del host está actualmente desconectado"
+  },
+  "RPORT_HOST_ACTIVE": {
+    "TITLE": "Host activo",
+    "MESSAGE": "El host de rport está activo actualmente"
+  },
+  "GROUP_ALREADY_EXISTS": {
+    "TITLE": "Grupo existente",
+    "MESSAGE": "El grupo indicado ya existe"
+  },
+  "REPORT_HAS_BEEN_CANCELLED": {
+    "TITLE": "Reporte cancelado",
+    "MESSAGE": "El reporte seleccionado fue cancelado"
+  },
+  "INVALID_FIELD_VALUE": {
+    "TITLE": "Campo inválido",
+    "MESSAGE": "El campo seleccionado tiene un valor inválido"
+  },
+  "SOAR_ERROR": {
+    "TITLE": "Error de tenant",
+    "MESSAGE": "No se pudo establecer comunicación con el tenant \"{{tenantName}}\""
+  },
+  "APT_MITIGATION_POLICY": "Política de Mitigación",
+  "APPLICATIONPOLICY": "Política de Aplicación",
+  "INVENTORY_SCAN_POLICY": "Política de Escaneo de Inventario",
+  "SCHEDULED_REPORT": "Reporte Programado",
+  "GROUP": "Grupo",
+  "USER": "Usuario",
+  "HOST": "Host",
+  "HOST_ID": "Host",
+  "CUSTOM_FIXES": "Mitigaciones",
+  "TAGS": "Etiquetas",
+  "DOCUMENT": "Documento",
+  "CUSTOM_RTR_DATA": "Datos RTR Personalizados",
+  "CROWDSTRIKE_CONSOLE": "Consola de Crowdstrike",
+  "CROWDSTRIKE_ACTION": "Acción de Crowdstrike",
+  "MANAGERS": "Administradores",
+  "POLICYRUN": "Ejecución de Política",
+  "RPORTCLIENT": "Agente Batuta",
+  "POLICYRUNHOST": "Host de Ejecución de Política",
+  "POLICY_PLAYBOOK": "Libro de Jugadas de Política",
+  "COMPLIANCE_COMMAND": "Comando de Cumplimiento",
+  "POLICY_RUN": "Ejecución de Política",
+  "POLICY_RESULTS": "Resultados de Política",
+  "COMPLIANCE_CONTROL": "Control de Cumplimiento",
+  "CRON": "CRON",
+  "CRONTABS": "CRONTabs",
+  "ACTION": "Acción",
+  "CONSOLE": "Consola",
+  "CS_AD_ACTION": "Acción de AD de Crowdstrike",
+  "AD": "AD",
+  "RTR_ACTION": "Acción de RTR",
+  "CONTAINMENTBUTTON": "Botón de Contención",
+  "DETECTION": "Detección",
+  "DASHBOARD": "Panel de Control",
+  "RESOURCES": "Recursos",
+  "FEED_EVENT": "Evento de Feed",
+  "APPLICATIONPOLICYSTATUS": "Estado de la Política de Aplicación",
+  "CLIENT": "Agente",
+  "INVENTORY_SCAN": "Escaneo de Inventario",
+  "NOTIFY_TASK": "Tarea de Notificación",
+  "TASK": "Tarea",
+  "NOTIFYTASK": "Tarea de Notificación",
+  "CHECKCHANGESTASK": "Tarea de Revisión de Cambios",
+  "SCORE_ID": "ID de Puntuación",
+  "CLIENT_BATUTA_ID": "ID de Agente Batuta",
+  "CLIENT_ID": "ID de Agente",
+  "PROACTIVITY_CONFIGURATION": "Configuración de Proactividad",
+  "PROACTIVITY_QUALIFICATION": "Calificación de Proactividad",
+  "QUEUESTASK": "Tarea de Colas",
+  "UPDATE_TASK_IN_PROGRESS": "Actualización de tarea en progreso",
+  "DELETE_THIS_TASK": "Eliminar esta tarea",
+  "CANCEL_THIS_TASK": "Cancelar esta tarea",
+  "CANCEL_TASK_IN_PROGRESS": "Cancelación de tarea en progreso",
+  "VALIDATE_THIS_TASK": "Validar esta tarea",
+  "VALIDATE_TASK_IN_PROGRESS": "Validación de tarea en progreso",
+  "REMOVE_ENTITY_ON_THIS_TASK": "Eliminar entidad en esta tarea",
+  "REMOVE_ENTITY_FROM_TASK_IN_PROGRESS": "Eliminar entidad de tarea en progreso",
+  "FILE_PATH": "Ruta de Archivo",
+  "REPORT": "Reporte",
+  "REPORT_FILE": "Archivo de Reporte",
+  "SECTIONS_ARE_REQUIRED": "Las secciones son requeridas",
+  "SECTIONS": "Secciones",
+  "REPORT_SECTIONS": "Secciones del Reporte",
+  "ENABLED_REPORT_SECTIONS": "Secciones del Reporte Habilitadas",
+  "RPORT_CLIENT": "Agente Batuta",
+  "HOSTS": "Hosts",
+  "DESIRED_STATE": "Estado Deseado",
+  "JOB": "Trabajo",
+  "PLATFORM": "Plataforma",
+  "TEMPLATE": "Plantilla",
+  "COMMAND_TYPE": "Tipo de Comando",
+  "OS_KERNEL": "Kernel del SO",
+  "USER_ALREADY_EXISTS": {
+    "TITLE": "Usuario ya existe",
+    "MESSAGE": "El correo proporcionado corresponde a un usuario existente"
+  },
+  "IP_RANGE": "Rango (CIDR)"
+}

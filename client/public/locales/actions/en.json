@@ -1,0 +1,16 @@
+{
+  "REMOVE_POLICIES": "Remove Policies",
+  "ASSIGN_TO_GROUP": "Assign to group",
+  "REBOOT": "Reboot",
+  "EXPORT_FULL": "Export full inventory",
+  "RENEW_INVENTORY": "Renew Inventory",
+  "EXPORT_SELECTED": "Export selected inventory",
+  "ADD_TAGS": "Add Tags",
+  "REMOVE_TAGS": "Remove Tags",
+  "REMOVE_MANY_SCRIPTS": "Remove Scripts",
+  "UNINSTALL_APPLICATION": "Uninstall application",
+  "SET_CRITICALITY": "Set criticality",
+  "REMOVE_MANY_RULES": "Remove Rules",
+  "REMOVE_MANY_REPORTS": "Remove Reports",
+  "REMOVE_MANY_NETWORKS": "Remove Networks"
+}

@@ -1,0 +1,15 @@
+.title {
+  @apply font-title text-3xl font-extralight uppercase tracking-widest;
+}
+
+.text {
+  @apply text-sm font-extralight;
+}
+
+.container {
+  @apply flex flex-1 flex-col justify-center gap-2 text-center;
+}
+
+.buttons {
+  @apply mt-4 flex justify-center space-x-2;
+}

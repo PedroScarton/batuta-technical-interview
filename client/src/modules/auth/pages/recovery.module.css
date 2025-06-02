@@ -1,0 +1,32 @@
+.recovery {
+  @apply mx-auto mt-12 w-11/12 max-w-2xl;
+}
+
+.logotipo {
+  @apply flex items-center justify-center;
+}
+
+.welcomeText {
+  @apply mb-8 pt-1;
+}
+
+.link:visited {
+  @apply text-primary-light;
+}
+
+.link,
+.link:visited {
+  @apply text-xs text-primary;
+}
+
+.footer {
+  @apply text-center;
+}
+
+.cardTop {
+  @apply flex items-start justify-between;
+}
+
+.locale {
+  @apply flex items-center;
+}

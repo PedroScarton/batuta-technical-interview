@@ -1,0 +1,18 @@
+{
+  "exclude": ["**/node_modules/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@constants/*": ["src/constants/*"],
+      "@modules/*": ["src/modules/*"],
+      "@shared/*": ["src/shared/*"],
+      "@hooks/*": ["src/shared/hooks/*"],
+      "@context/*": ["src/shared/context/*"],
+      "@ui/*": ["src/shared/components/ui/*"],
+      "@components/*": ["src/shared/components/*"],
+      "@utils/*": ["src/shared/utils/*"]
+    }
+  }
+}

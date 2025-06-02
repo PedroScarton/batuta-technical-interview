@@ -1,0 +1,383 @@
+{
+  "FIXES": "Mitigations",
+  "FIX": "Mitigation",
+  "MITIGATIONS": "Mitigations",
+  "MITIGATION": "Mitigation",
+  "SCRIPT_TAGS": "Script Tags",
+  "SHELLTYPE": "Shell Type",
+  "SELECTED_SCRIPTS": "Selected Scripts",
+  "REMOVING_MANY_HEADER": "Deleting Scripts",
+  "REMOVING_MANY_HELPER_MODAL": "Are you sure you want to delete the selected scripts?",
+  "REMOVING_SCRIPT": "Deleting Script",
+  "REMOVING_SCRIPT_SUBTITLE": "Are you sure you want to delete the selected script?",
+  "EDIT_SCRIPT_ACTION": "Edit Script",
+  "REMOVE_SCRIPT_ACTION": "Delete Script",
+  "SCRIPT_REMOVED": "Deleted Script",
+  "SCRIPT_REVOVED_ALERT": "The script has been successfully deleted",
+  "EDITING_SCRIPT": "Editing Script",
+  "ERROR_LOADING_SCRIPT": "Error Loading Script",
+  "ERROR_LOADING_SCRIPT_TEXT": "There was an error loading the script. Please try again.",
+  "CREATE_SCRIPT": "Create Script",
+  "CREATING_SCRIPT": "Creating Script",
+  "SCRIPT_CREATED": "Created Script",
+  "SCRIPT_CREATED_ALERT": "The Script has been successfully created",
+  "SCRIPT_UPDATED": "Script modified",
+  "SCRIPT_UPDATED_ALERT": "The Script was modified successfully",
+  "ERROR_CREATING_SCRIPT": "Error creating script",
+  "ERROR_CREATING_SCRIPT_TEXT": "There was an error creating the script. Please, try again.",
+  "ERROR_UPDATING_SCRIPT": "Error modifying the script",
+  "ERROR_UPDATING_SCRIPT_TEXT": "There was an error while modifying the script. Please try again.",
+  "SELECT_HOSTS": "Select Hosts",
+  "USE_SCRIPT": "Use Script",
+  "SELECT_HOST_ACTION": "Select Host Action",
+  "SCRIPTS_REMOVED_MSG": "The scripts have been successfully removed.",
+  "SCRIPTS_REMOVED_TITLE": "Scripts Removed",
+  "SCRIPTS_CREATED_MSG": "The Scripts were created successfully",
+  "SCRIPTS_CREATED_TITLE": "Scripts Created",
+  "RESILIENCE_SCORE": "Resilience Score",
+  "RESILIENCE": "Resilience",
+  "MACHINES": "Machines",
+  "SIMULATION": {
+    "CREATED_AT": "Created at",
+    "PHASES": "Phases",
+    "START_OF_EXECUTION": "Start of execution",
+    "SCENARIOS": "Scenarios",
+    "MACHINES": "Machines",
+    "DETECTIONS": "Detections",
+    "INFECTIONS": "Infection",
+    "RESILIENCE_LEGEND": "The Resilience Score is calculated from the infection and detection scores. It measures how well your company not only prevents attacks, but responds to them.\nThe score is categorized into Critical (<30%), Low (<60%), Medium (<80%), and High (>=80%) by the percentage it reaches.  The higher the percentage, the better.",
+    "DETECTIONS_LEGEND": "The Detection Score is calculated from the response the company has to the different scenarios and outcomes.\nThe score is categorized into Critical (<30%), Low (<60%), Medium (<80%), and High(>=80%) based on the percentage it reaches. The higher the percentage, the better.",
+    "INFECTIONS_LEGEND": "The Infection Score is calculated from the results of each scenario in the simulation. With Bypass and Partial Bypass taken as a successful infection.\nThe score is categorized into Critical (>=80%), High (>=60%), Medium (>=30%), and Low (<30%) by the percentage it reaches.  The lower the percentage, the better."
+  },
+  "low": "Low",
+  "medium": "Medium",
+  "high": "High",
+  "CREATE_FIX": "Create mitigation",
+  "CREATE_FIX_MODAL": {
+    "TITLE": "Create mitigation"
+  },
+  "APT_FIX_FORM": {
+    "NAME": {
+      "LABEL": "Name:",
+      "HELPER": "The name to identify the mitigation by"
+    },
+    "RELATED_MITRE": {
+      "LABEL": "Related Mitre",
+      "HELPER": "The id(s) for the Mitre Techniques this mitigation addresses"
+    },
+    "TAGS": {
+      "LABEL": "Tags",
+      "HELPER": "Groupings the mitigation belongs to"
+    },
+    "IMPORTANCE": {
+      "LABEL": "Severity",
+      "HELPER": "How relevant the mitigation is to ensuring endpoint safety"
+    },
+    "DESCRIPTION": {
+      "LABEL": "Description:",
+      "HELPER": "Write a brief description of the mitigation"
+    },
+    "SHELLTYPE": {
+      "LABEL": "Shell Type",
+      "HELPER": "The Shell type will impact which hosts can run this mitigation based on their OS"
+    },
+    "SCRIPT": {
+      "LABEL": "Script"
+    },
+    "TEST": {
+      "LABEL": "Test",
+      "HELPER": "This command will test if the mitigation is already in place or needs to be applied. It enables Batuta to audit  hosts for this vulnerability continuously and ensure vulnerabilities stay mitigated."
+    },
+    "ROLLBACK": {
+      "LABEL": "Rollback"
+    }
+  },
+  "SEE_HOST_DETAIL": "See Host Detail",
+  "APPLY_ALL_PENDING": "Apply All Pending",
+  "EDIT_FIX": {
+    "LABEL": "Edit Mitigation",
+    "TITLE": "Edit Mitigation: {{fixName}} "
+  },
+  "APPLY_FIX": "Apply Mitigation",
+  "ROLLBACK_FIX": "Rollback Mitigation",
+  "HOST_NAME": "Host name",
+  "MITRE_TECHNIQUE": "Mitre Technique",
+  "READ_MORE_ON_MITRE": "Read more on the Mitre Website",
+  "ROLLBACK_ON_ALL_CONFIRMATION": {
+    "TITLE": "Rollback {{fixName}}",
+    "HELPER": "You are about to rollback the mitigation on all hosts.\n\nAre you sure you wish to continue?",
+    "BUTTON": "Confirm"
+  },
+  "DELETE_FIX_CONFIRMATION": {
+    "TITLE": "Delete Mitigation: {{fixName}}",
+    "HELPER": "You are about to delete the mitigation \"{{fixName}}\". This action cannot be undone. All records of applied mitigations and associated rollbacks will also be deleted.\n\nAre you sure you wish to continue?",
+    "BUTTON": "Delete"
+  },
+  "HOSTS_APPLIED_TO": "Hosts applied to",
+  "LAST_CHECKED": "Last Checked",
+  "critical": "Critical",
+  "MISSING_FIXES": "Missing Mitigations",
+  "APPLIED_FIXES": "Applied Mitigations",
+  "IMPORTANCE": "Severity",
+  "APPLIED_ON": "Applied On",
+  "APPLY_ALL": "Apply All",
+  "ROLLBACK_ALL_FIXES": "Rollback All Mitigations",
+  "MISSING_HIGH": "Missing High",
+  "MISSING_LOW": "Missing Medium",
+  "MISSING_MEDIUM": "Missing Low",
+  "APT_MITIGATIONS": "APT Mitigations",
+  "HOSTS_BY_TOTAL_UNAPPLIED_FIXES": "Hosts By Total Unapplied Mitigations",
+  "FIXES_NOT_APPLIED_BY_IMPORTANCE": "Mitigations Not Applied By Severity",
+  "ENDPOINTS_WITH_UNAPPLIED_FIXES": "Endpoints with Unapplied High Impact Mitigations",
+  "FIXES_NOT_APPLIED": "Mitigations Not Applied",
+  "ROLLBACK_ON_ALL": "Rollback on all",
+  "DELETE_FIX": "Delete mitigation",
+  "DELETE_FIX_DESCRIPTION": "This will delete the current mitigation from your Mitigations Library and rollback its effects on all currently affected hosts.",
+  "ROLLBACK_ON_ALL_DESCRIPTION": "Rollback this mitigation on all currently affected hosts.",
+  "RUN_FIX_VALIDATION_DESCRIPTION": "Select the hosts you want to run the mitigation validation on.",
+  "DESCRIPTION": "Description",
+  "FIX_NAME": "Mitigation Name",
+  "FIX_TAGS": "Mitigation Tags",
+  "APPLY_TO_MORE": "Apply to More",
+  "FIX_APPLIED_ALERT": "The mitigation has been successfully applied",
+  "FIX_APPLIED": "Mitigation applied",
+  "FIXES_APPLIED_ALER": "The mitigations have been successfully applied",
+  "FIXES_APPLIED": "Mitigations applied",
+  "FIX_ROLLBACKED_ALERT": "The mitigation has been successfully rolled back",
+  "FIX_ROLLBACKED": "Mitigation rolled back",
+  "FIXES_ROLLBACKED_ALERT": "The mitigations have been successfully rolled back",
+  "FIXES_ROLLBACKED": "Mitigations rolled back",
+  "FIX_DELETED_ALERT": "The mitigation has been successfully deleted",
+  "FIX_DELETED": "Mitigation deleted",
+  "FIXES_DELETED_ALERT": "The mitigations have been successfully deleted",
+  "NO_FIXES_PENDING": "No pending mitigations",
+  "OS": "OS",
+  "KERNEL": "Kernel version",
+  "ACTION": "Action",
+  "CREATE_FIX_ALERT": {
+    "MESSAGE": "The new mitigation has been successfully created",
+    "TITLE": "Mitigation created",
+    "INFO_MESSAGE": "The mitigation test will be run automatically on hosts that are connected and share shell type",
+    "INFO_TITLE": "Test Running"
+  },
+  "CREATE_FIX_ALERT_ERROR": {
+    "MESSAGE": "An error occurred during the creation of Mitigation",
+    "TITLE": "Error creating Mitigation"
+  },
+  "EDIT_FIX_ALERT": {
+    "MESSAGE": "The mitigation has been successfully edited",
+    "TITLE": "Mitigation edited"
+  },
+  "EDIT_FIX_ALERT_ERROR": {
+    "MESSAGE": "An error occurred during editing the Mitigation",
+    "TITLE": "Error editing Mitigation"
+  },
+  "DELETE_FIX_ALERT": {
+    "MESSAGE": "The mitigation has been successfully deleted",
+    "TITLE": "Mitigation deleted"
+  },
+  "DELETE_FIX_ALERT_ERROR": {
+    "MESSAGE": "An error occurred during the deletion of Mitigation",
+    "TITLE": "Error deletion Mitigation"
+  },
+  "ROLLBACK_ALL_FIXES_CONFIRMATION": {
+    "TITLE": "Rollback all mitigations",
+    "HELPER": "You are about to rollback all mitigations on the host.\n\nAre you sure you wish to continue?",
+    "BUTTON": "Rollback"
+  },
+  "APPLY_ALL_FIX_CONFIRMATION": {
+    "TITLE": "Apply all mitigations",
+    "HELPER": "You are about to apply all mitigations on the host.\n\nAre you sure you wish to continue?",
+    "BUTTON": "Apply"
+  },
+  "TAGS": "Tags",
+  "APPLY_TO_SELECTED": "Apply to selected",
+  "IP_ADDRESS": "IP Address",
+  "STATUS": "Status",
+  "NO_HOST_APPLIED": "No applications in hosts",
+  "ROLLBACK_ON_ALL_ALERT": {
+    "TITLE": "Rollback on all Hosts",
+    "MESSAGE": "The mitigation has been successfully rolled back on all hosts"
+  },
+  "ROLLBACK_ON_ALL_ALERT_ERROR": {
+    "TITLE": "Error Rollback",
+    "MESSAGE": "The mitigation could not be rolled back on all hosts"
+  },
+  "APPLIED_FIX_ALERT": {
+    "MESSAGE": "The mitigation has been successfully applied",
+    "TITLE": "Mitigation Applied"
+  },
+  "APPLIED_FIX_ALERT_ERROR": {
+    "MESSAGE": "An error occurred when trying to apply the mitigation. \n\nPlease try again later",
+    "TITLE": "The mitigation could not be applied"
+  },
+  "RUN_TEST": "Run test",
+  "RUN_TEST_SUCCESS_DESC": "The test has been successfully sent to the selected hosts",
+  "RUN_TEST_TITLE": "Validation started",
+  "RUN_TEST_ALERT": {
+    "MESSAGE": "Test execution has started on the available hosts",
+    "TITLE": "Test started"
+  },
+  "RUN_TEST_ALERT_ERROR": {
+    "MESSAGE": "There was an error in the execution of the test",
+    "TITLE": "Test execution error"
+  },
+  "RUN_TEST_CONFIRMATION": {
+    "HELPER": "Do you want to start the test on all available hosts?",
+    "TITLE": "Start Test",
+    "BUTTON": "Start"
+  },
+  "FIX_ROLLBACK_TITLE": "Process started",
+  "FIX_ROLLBACK_MSG": "The rollback command has been sent, please wait for the process to finish.",
+  "FIX_APPLIED_TITLE": "Process started",
+  "FIX_APPLIED_MSG": "The mitigation has been sent, please wait for the process to finish.",
+  "NO_FIXES_MISSING": "No Mitigations missing",
+  "NO_FIXES_APPLIED": "No Mitigations applied",
+  "SELECTED_MITIGATION": "Selected Mitigation",
+  "APPLY": "Apply",
+  "APPLY_ALL_MITIGATIONS": "Apply all mitigations",
+  "APPLY_ALL_MITIGATIONS_DESCRIPTION": "This action enables the application of all pending mitigations to the host.",
+  "ROLLBACK_ALL_MITIGATIONS": "Rollback all mitigations",
+  "ROLLBACK_ALL_MITIGATIONS_DESCRIPTION": "This action enables the rollback of all applied mitigations to the host.",
+  "RUN_YOUR_FIRST_SCAN": "Run your first test",
+  "RUN_YOUR_FIRST_SCAN_MESSAGE": "Currently there are no hosts to display, we suggest you start by running a test on the hosts that are connected.",
+  "HOSTS_PENDING_APPLIED": "Hosts Pending/Applied",
+  "SHELL_TYPE": "Shell Type",
+  "MITIGATION_STATUS": "Mitigation Status",
+  "MITIGATION_NAME": "Mitigation Name",
+  "APPLY_MITIGATIONS": "Apply Mitigations",
+  "ROLLBACK_MITIGATIONS": "Rollback Mitigations",
+  "APPLY_SUCCESS_DESC": "The mitigation has been successfully applied",
+  "APPLY_SUCCESS_TITLE": "Mitigation Applied",
+  "APPLY_ALERT_ERROR_MESSAGE": "The mitigation could not be applied, try again later",
+  "APPLY_ALERT_ERROR_TITLE": "Error applying mitigation",
+  "ROLLBACK_SUCCESS_DESC": "Mitigation has been successfully rolled back",
+  "ROLLBACK_SUCCESS_TITLE": "Mitigation Rolled Back",
+  "ROLLBACK_ALERT_ERROR_MESSAGE": "The mitigation could not be rolled back, try again later",
+  "ROLLBACK_ALERT_ERROR_TITLE": "Error rolling back mitigation",
+  "APPLY_MITIGATION": "Apply Mitigation",
+  "ROLLBACK_MITIGATION": "Rollback Mitigation",
+  "APPLY_MITIGATION_DESCRIPTION": "This action enables the application of the selected mitigation to the host.",
+  "ROLLBACK_MITIGATION_DESCRIPTION": "This action enables the rollback of the selected mitigation to the host.",
+  "TEST_MITIGATION": "Test Mitigation",
+  "TEST_MITIGATION_DESCRIPTION": "This action enables the validation of the selected mitigation on the host.",
+  "HOST_TO_TEST": "Hosts to test Mitigation",
+  "HOST_TO_APPLY": "Hosts to apply Mitigation",
+  "HOST_TO_ROLLBACK": "Hosts to rollback Mitigation",
+  "HOST_AFFECTED": "Hosts Affected",
+  "MITIGATION_POLICIES": "Mitigation Policies",
+  "POLICY_NAME": "Policy Name",
+  "EXECUTION_TYPE": "Execution Type",
+  "HOSTS_AFFECTED": "Hosts Affected",
+  "FREQUENCY": "Frequency",
+  "CREATED_AT": "Created at",
+  "MODIFIED_AT": "Modified at",
+  "MODIFIED_BY": "Modified by",
+  "NO_MITIGATIONS": "No mitigations to show",
+  "DELETE_POLICY": "Delete Policy",
+  "DELETE_POLICY_DESCRIPTION": "The selected policy will be deleted and if there are pending processes, they will be moved to the cancelled one.",
+  "DETAILS_POLICY": "Policy Details",
+  "DELETE_POLICY_ALERT": {
+    "MESSAGE": "The policy has successfully been deleted",
+    "TITLE": "Policy Deleted"
+  },
+  "DELETE_POLICY_ALERT_ERROR": {
+    "MESSAGE": "Something went wrong, try again later",
+    "TITLE": "Error to delete the policy"
+  },
+  "RUN_POLICY": {
+    "MESSAGE": "The policy started with the testing in the partner group",
+    "TITLE": "Policy Executed",
+    "LABEL": "Run Policy"
+  },
+  "RUN_POLICY_ERROR": {
+    "MESSAGE": "Something went wrong, try again later",
+    "TITLE": "Error executing the policy"
+  },
+  "DELETE_POLICY_CONFIRMATION": {
+    "TITLE": "Delete Policy",
+    "HELPER": "You are about to delete the policy \"{{policyName}}\". This action cannot be undone.\n\nAre you sure you wish to continue?",
+    "BUTTON": "Delete"
+  },
+  "RUN_POLICY_CONFIRMATION": {
+    "TITLE": "Start Execution",
+    "HELPER": "Do you want to start a new run the policy {{policyName}} on the selected group of devices?",
+    "BUTTON": "Start"
+  },
+  "EDIT_POLICY": "Edit Policy",
+  "NEW_MITIGATION_POLICY": "New Mitigation Policy",
+  "EDIT_MITIGATION_POLICY": "Edit Mitigation Policy",
+  "AFFECTED_GROUP": "Affected Group",
+  "TEST": "Test",
+  "ROLLBACK": "Rollback",
+  "MINUTES": "Minutes",
+  "HOURS": "Hours",
+  "DAYS": "Days",
+  "WEEKS": "Weeks",
+  "MONTHS": "Months",
+  "ACTION_TO_EXECUTE": "Action to Execute",
+  "DISCARD_POLICY": "Discard Policy",
+  "CREATE_POLICY": "Create Policy",
+  "MITIGATION_DESCRIPTION": "Mitigation Description",
+  "DISABLE_POLICY": "Disable Policy",
+  "ENABLE_POLICY": "Habilitar Política",
+  "DISABLE_POLICY_CONFIRMATION": {
+    "TITLE": "Disable Policy",
+    "HELPER": "You are about to disable the policy \" {{policyName}} \". \n\nAre you sure you wish to continue?",
+    "BUTTON": "Disable"
+  },
+  "ENABLE_POLICY_CONFIRMATION": {
+    "TITLE": "Enable Policy",
+    "HELPER": "You are about to enable the policy \" {{policyName}} \". \n\nAre you sure you wish to continue?",
+    "BUTTON": "Enable"
+  },
+  "CHANGE_STATUS": {
+    "MESSAGE": "The policy has been successfully updated",
+    "TITLE": "Policy Updated"
+  },
+  "CHANGE_STATUS_ERROR": {
+    "MESSAGE": "Something went wrong, try again later",
+    "TITLE": "Error to update the policy"
+  },
+  "MINUTE_HOUR_DAY": "Minutes, hours, days, weeks, months",
+  "MAX_MIN_MINUTES": "Max minutes 64800 and min 30",
+  "MAX_MIN_HOURS": "Max hours 1080 and min 1",
+  "MAX_MIN_DAYS": "Max days 45 and min 1",
+  "MAX_MIN_WEEKS": "Max weeks 6 and min 1",
+  "MAX_MIN_MONTHS": "Max months 1 and min 1",
+  "ERROR_TIME": "Value outside the allowed range:",
+  "UPDATE_POLICY_SUCCESS": {
+    "MESSAGE": "The policy has been successfully updated",
+    "TITLE": "Policy Updated"
+  },
+  "UPDATE_POLICY_ERROR": {
+    "MESSAGE": "Something went wrong, please check de form and try again later",
+    "TITLE": "Error to update the policy"
+  },
+  "SCHEDULE": "Schedule",
+  "WHAT_IS_A_MITIGATION_POLICY": "What is a mitigation policy?",
+  "CREATE_POLICY_SUCCESS": {
+    "MESSAGE": "The policy has been successfully created",
+    "TITLE": "Policy Created"
+  },
+  "CREATE_POLICY_ERROR": {
+    "MESSAGE": "Something went wrong, please check de form and try again later",
+    "TITLE": "Error to create the policy"
+  },
+  "FIXES_ROLLBACK_MSG": "The mitigation rollback process has started successfully",
+  "FIXES_ROLLBACK_TITLE": "Rollback Process Started",
+  "FIXES_APPLIED_MSG": "The mitigation apply process has started successfully",
+  "FIXES_APPLIED_TITLE": "Apply Process Started",
+  "NO_FIXES_APPLIED_MSG": "No mitigations were found pending application",
+  "NO_FIXES_APPLIED_TITLE": "No Mitigations to Apply",
+  "NO_FIXES_PENDING_MSG": "No mitigations were found pending rollback",
+  "NO_FIXES_PENDING_TITLE": "No Mitigations to Rollback",
+  "IS_REQUIRED_MAX_LENGTH_256": "Is required and max length 256 characters",
+  "MAX_LENGTH_1000": "Max length 1000 characters",
+  "IS_REQUIRED": "Is required",
+  "NO_HOSTS_WITH_UNAPPLIED_FIXES": "No hosts with unapplied fixes found",
+  "TEST_HELPER": "This action execute the test script for each mitigation on the hosts in the affected group.",
+  "APPLY_HELPER": "This action will execute the apply script for each mitigation on the hosts in the affected group.",
+  "ROLLBACK_HELPER": "This action will execute the rollback script for each mitigation on the hosts in the affected group.",
+  "MITIGATION_POLICY": "Mitigation Policy"
+}

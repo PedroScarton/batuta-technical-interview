@@ -1,0 +1,39 @@
+.baseCard {
+  @apply rounded-md border-solid border-neutral-800 p-3 duration-300;
+}
+
+.card {
+  @apply p-3;
+}
+.smallCard {
+  @apply px-2 py-3;
+}
+.bigCard {
+  @apply p-6 shadow-lg;
+}
+
+.activeCard {
+  @apply border-2 border-solid border-primary shadow-md;
+}
+
+.pointer {
+  @apply cursor-pointer;
+}
+
+.pointer:hover {
+  @apply shadow-sm;
+}
+
+.disabledCard {
+  @apply bg-500 cursor-not-allowed;
+}
+
+.disabledCard p,
+.disabledCard h1,
+.disabledCard h2,
+.disabledCard h3,
+.disabledCard h4,
+.disabledCard h5,
+.disabledCard h6 {
+  @apply !text-neutral-400;
+}

@@ -1,0 +1,17 @@
+{
+  "CREATE_SCRIPT_SUBTITLE": "Para crear este script es necesario completar los siguientes campos, Esta información dependerá del tipo de sistema operativo y del shell que lo ejecutará:",
+  "EDIT_SCRIPT_SUBTITLE": "Para editar este script es necesario completar los siguientes campos, Esta información dependerá del tipo de sistema operativo y del shell que lo ejecutará:",
+  "MALFORMED_SCRIPT": "El script no puede estar vacío y los parámetros deben estar contenidos dentro de los valores {{ }}.",
+  "SCRIPT_NAME_HELP": "Rellene este campo con un identificador sencillo y fácil de recordar",
+  "SCRIPT_TAGS_HELP": "Puedes asociar hasta 10 etiquetas para facilitar la búsqueda y el uso.",
+  "SCRIPT_DESCRIPTION_HELP": "Descripción simple y breve de lo que hace o ejecuta el script",
+  "SCRIPT_SHELL_HELP": "El tipo de Shell se asociará con el sistema operativo del Host.",
+  "SCRIPT_HELP": "Puede añadir parámetros dinámicos a su script utilizando el formato  {{parameter}}. Por favor, consulte la <a style='color:{{color}}' href='/documentation/es/271' target='_blank'>documentación</a>.",
+  "SHELLTYPE": "Shell",
+  "DETECTED_PARAMETERS_one": "Se ha detectado {{count}} parámetro dinámico. Este valor será necesario antes de la ejecución",
+  "DETECTED_PARAMETERS_other": "Se han detectado {{count}} parámetros dinámicos. Estos valores serán necesarios antes de la ejecución",
+  "CREATE_SCRIPT": "Crear",
+  "CANCEL_SCRIPT": "Cancelar",
+  "VIEW_SCRIPT": "Detalles del script",
+  "PARAMETER_INDICATOR": "Indicador de parámetro"
+}

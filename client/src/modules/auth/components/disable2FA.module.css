@@ -1,0 +1,15 @@
+.container {
+  @apply flex w-full flex-col items-center;
+}
+
+.form {
+  @apply w-2/4;
+}
+
+.center {
+  @apply text-center;
+}
+
+.header {
+  @apply uppercase tracking-widest;
+}
