@@ -3,6 +3,7 @@
   "SIGN_IN_MESSAGE": "Please sign in with the credentials you were provided.",
   "SIGN_OUT": "Sign out",
   "EMAIL_HELPER": "Use your corporate email.",
+  "EMAIL_HELPER2": "Your mail is used to send you notifications and alerts.",
   "EMAIL_ERROR": "Please prov a valid mail adres.",
   "password": "Password",
   "PASSWORD_HELPER": "Your password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a symbol.",

@@ -32,7 +32,7 @@ const Recovery = () => {
   const { palette } = useBatutaTheme();
 
   const submitHandler = useCallback(
-    event => {
+    (event) => {
       event.preventDefault();
 
       const requestPasswordReset = async () => {
@@ -48,10 +48,7 @@ const Recovery = () => {
           if (error) {
             setMessage({ text: t(error.code), status: 'error' });
           } else {
-            setMessage({
-              text: t('FORGOT_PASSWORD_SUCCESS'),
-              status: 'success',
-            });
+            setMessage({ text: t('FORGOT_PASSWORD_SUCCESS'), status: 'success' });
           }
         }
       };
@@ -82,17 +79,14 @@ const Recovery = () => {
         {message ? (
           <CallOut type={message.status} title={t('RECOVERY_PASSWORD')} message={message.text} />
         ) : (
-          <form onSubmit={submitHandler}>
+          <form onSubmit={submitHandler} className="my-10">
             <Input
               id="email"
               label={t('EMAIL')}
               onInput={inputHandler}
-              helperText={t('EMAIL_HELPER')}
+              helperText={t('EMAIL_HELPER2')}
               errorText={t('EMAIL_ERROR')}
-              icon={<EmailIcon />}
-              errorIcon={<EmailIcon color="error" />}
-              validators={[VALIDATOR_REQUIRE(), VALIDATOR_EMAIL()]}
-              required
+              validators={[VALIDATOR_REQUIRE()]}
             />
             <Margin top={32} />
             <Button
@@ -100,7 +94,7 @@ const Recovery = () => {
               type="submit"
               disabled={!formState.formIsValid}
               loading={loading}
-              label={t('FORGOT_PASSWORD_SUBMIT')}
+              label={t('FORGOT_PASSWORD_SUB')}
               fullWidth
               color={palette.black.main}
             />
@@ -108,7 +102,7 @@ const Recovery = () => {
         )}
         <Margin top={50} />
         <div className={styles.footer}>
-          <Link component={RouterLink} to="/login" id="auth-loging-backToSignIn-link">
+          <Link component={RouterLink} className="cursor-default" to="/login" id="auth-loging-backToSignIn-link">
             {t('BACK_TO_SIGN_IN')}
           </Link>
         </div>

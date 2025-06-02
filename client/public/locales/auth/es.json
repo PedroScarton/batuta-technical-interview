@@ -3,6 +3,7 @@
   "SIGN_IN_MESSAGE": "Por favor, iniciar seción con ls credensiales.",
   "SIGN_OUT": "Cerrar sesión",
   "EMAIL_HELPER": "Utilice su correo electrónico corporativo.",
+  "EMAIL_HELPER2": "Tu correo se utiliza para enviarte notificaciones y alertas.",
   "EMAIL_ERROR": "Por favor, proporcionar un correo electrónico válido.",
   "password": "Contraseña",
   "PASSWORD_HELPER": "Su contraseña debe contener al menos 8 caracteres, una letra mayúscula, una minúscula, un número y un símbolo.",
