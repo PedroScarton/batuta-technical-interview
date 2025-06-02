@@ -48,16 +48,16 @@ export const forgotPassword: RequestHandler = catchAsync(async (req, res) => {
 });
 
 export const resetPassword: RequestHandler = catchAsync(async (req, res) => {
-  // Get new password and token from request body
-  const { newPassword, token } = req.body;
+  // Get new password  from request body
+  const { newPassword } = req.body;
 
   // Validate new password and token
-  if (!newPassword || !token) {
-    throw errors.params(['newPassword', 'token']);
+  if (!newPassword) {
+    throw errors.params(['newPassword']);
   }
 
   // Simulate password reset logic (replace with actual logic)
-  Logger.info(`Password reset for token ${token} with new password`);
+  Logger.info(`Password reset with new password`);
 
   // Simulate API Error
   throw errors.badRequest('This is a simulated API error for testing purposes.');
