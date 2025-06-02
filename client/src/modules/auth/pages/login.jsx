@@ -21,7 +21,7 @@ import ErrorEmailIcon from '@assets/icons/email_pink.svg';
 import LightLogo from '@assets/images/Batuta_Logo_Black.svg';
 import DarkLogo from '@assets/images/Batuta_Logo_White.svg';
 import { useForm } from '@hooks/form-hook';
-import { VALIDATOR_EMAIL, VALIDATOR_REQUIRE } from '@utils/validators';
+import { VALIDATOR_REQUIRE } from '@utils/validators';
 
 import styles from './login.module.css';
 
@@ -76,7 +76,7 @@ const Login = () => {
             <Typography variant="body-md">{t('SIGN_IN_MESSAGE')}</Typography>
           </div>
           <div className={styles.locale}>
-            <DarkModeButton />
+            <DarkModeButton notWork />
             <Locale />
           </div>
         </div>
@@ -100,7 +100,7 @@ const Login = () => {
             helperText={t('EMAIL_HELPER')}
             errorText={t('EMAIL_ERROR')}
             errorIcon={ErrorEmailIcon}
-            validators={[VALIDATOR_REQUIRE(), VALIDATOR_EMAIL()]}
+            validators={[VALIDATOR_REQUIRE()]}
             required
             reference={emailInputRef}
           />
@@ -130,12 +130,7 @@ const Login = () => {
             color={palette.black.main}
           />
           <div className={styles.linkContainer}>
-            <Link
-              component={RouterLink}
-              className={styles.link}
-              to="/recovery"
-              id="auth-login-forgotPasswordOrBack-link"
-            >
+            <Link component={RouterLink} className='cursor-default' to="/recovery" id="auth-login-forgotPasswordOrBack-link">
               {t('FORGOT_PASSWORD')}
             </Link>
           </div>

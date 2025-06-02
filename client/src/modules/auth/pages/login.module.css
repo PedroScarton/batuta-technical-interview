@@ -3,7 +3,7 @@
 }
 
 .logotipo {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center pt-12;
 }
 
 .singInText {

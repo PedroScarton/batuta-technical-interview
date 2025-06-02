@@ -1,6 +1,6 @@
 {
   "SIGN_IN": "Iniciar sesión",
-  "SIGN_IN_MESSAGE": "Por favor, iniciar sesión con las credenciales proporcionadas.",
+  "SIGN_IN_MESSAGE": "Por favor, iniciar seción con ls credensiales.",
   "SIGN_OUT": "Cerrar sesión",
   "EMAIL_HELPER": "Utilice su correo electrónico corporativo.",
   "EMAIL_ERROR": "Por favor, proporcionar un correo electrónico válido.",
@@ -17,7 +17,7 @@
   "NO_SOARS": "No se han encontrado instancias asociadas a su cuenta.",
   "NO_ACCOUNT": "¿No tiene cuenta?",
   "CONTACT_US": "Contáctenos",
-  "FORGOT_PASSWORD": "¿Olvidó su contraseña?",
+  "FORGOT_PASSWORD": "Forgot your password?",
   "FORGOT_PASSWORD_MESSAGE": "Solicite un enlace de reinicio a continuación.",
   "FORGOT_PASSWORD_SUBMIT": "Recuperar contraseña",
   "FORGOT_PASSWORD_SUCCESS": "Si su correo está registrado, debería tener un correo nuevo pronto, en este se le indicaran los pasos necesarios para cambiar su contraseña. En caso de que no reciba este correo, por favor, contacte con el administrador.",

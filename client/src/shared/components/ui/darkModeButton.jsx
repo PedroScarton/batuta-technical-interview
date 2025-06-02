@@ -6,10 +6,13 @@ import IconButton from '@mui/material/IconButton';
 
 import { ThemeContext } from '@shared/theme/theme';
 
-const DarkModeButton = ({}) => {
+const DarkModeButton = ({ notWork = false }) => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const handleClick = useCallback(() => {
+    if (notWork) {
+      return;
+    }
     const themeToSet = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', themeToSet);
     setTheme(themeToSet);
