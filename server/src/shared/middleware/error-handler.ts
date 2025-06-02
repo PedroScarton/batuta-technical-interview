@@ -46,4 +46,10 @@ export default function ErrorHandler(err: any, req: Request, res: Response, next
   error.status = error.status || 500;
 
   Logger.info(err.stack);
+
+  res.status(error.status).json({
+    status: error.status,
+    message: error.message,
+    code: error.code || 'INTERNAL_SERVER_ERROR',
+  });
 }

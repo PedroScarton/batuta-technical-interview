@@ -1,6 +1,6 @@
 import 'dotenv/config';
 
-import express from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import Cors from 'cors';
 
 // Importing middlewares
@@ -17,6 +17,7 @@ import baseMiddleware from '@shared/middleware/basic-middleware';
 import { Logger } from '@shared/helpers/classes/logger.class';
 import reqLogger from '@shared/helpers/functions/req-logger.function';
 import ErrorHandler from '@shared/middleware/error-handler';
+import { errors } from '@shared/utils/app-errors';
 
 // Starting express app
 const app = express();
@@ -30,10 +31,16 @@ app.use(Morgan(reqLogger));
 // Set up event listeners
 app.use('/user', baseMiddleware, userRoutes);
 
+// 404 error handler
+app.use((_: Request, __: Response, next: NextFunction) => {
+  next(errors.not_found('Route'));
+});
+
 app.use(ErrorHandler);
 
 // Port to listen on
 app.set('PORT', PORT || 3000);
 
 // Set up server
+app.listen(app.get('PORT'));
 Logger.info(`** Server is listening on http://localhost:${app.get('PORT')} **`);
