@@ -29,7 +29,7 @@ app.use(Cors({ credentials: true, origin: true }));
 app.use(Morgan(reqLogger));
 
 // Set up event listeners
-app.use('/user', baseMiddleware, userRoutes);
+app.use('/api/user', baseMiddleware, userRoutes);
 
 // 404 error handler
 app.use((_: Request, __: Response, next: NextFunction) => {
@@ -39,7 +39,7 @@ app.use((_: Request, __: Response, next: NextFunction) => {
 app.use(ErrorHandler);
 
 // Port to listen on
-app.set('PORT', PORT || 3000);
+app.set('PORT', PORT || 4001);
 
 // Set up server
 app.listen(app.get('PORT'));
