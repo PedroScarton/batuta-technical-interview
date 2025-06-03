@@ -44,10 +44,12 @@ const Login = () => {
     }
   }, []);
 
-  const submitHandler = useCallback(() => {
+  const submitHandler = useCallback(async () => {
     const { inputValues } = formState;
 
-    const token = signIn(inputValues);
+    const token = await signIn(inputValues);
+
+    console.log('token', token);
 
     if (token) {
       naveigate('/loged');

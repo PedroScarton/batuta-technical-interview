@@ -1,6 +1,6 @@
 import { postFetch } from '@utils/fetcher';
 
-const authBaseUrl = '/auth';
+const authBaseUrl = '/user';
 
 export async function login(email, password) {
   try {
