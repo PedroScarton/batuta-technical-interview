@@ -45,9 +45,12 @@ export default function AuthProvider({ children }) {
       signIn: async ({ email, password }) => {
         dispatch({ type: 'SET_SIGNING_IN', value: true });
 
-        const { token: authToken, error } = await AuthService.login(email, password);
+        const { error } = await AuthService.login(email, password);
 
-        if (!error) {
+        console.log(error);
+
+        if (error) {
+          console.log(error);
           dispatch({ type: 'SET_SIGNING_IN', value: false });
           dispatch({ type: 'LOGIN_ERROR', text: error.code || '400', status: 'error' });
           return;
@@ -55,9 +58,9 @@ export default function AuthProvider({ children }) {
 
         dispatch({ type: 'SET_SIGNING_IN', value: false });
 
-        dispatch({ type: 'SIGN_IN', token: authToken });
+        dispatch({ type: 'SIGN_IN', token: 'authToken' });
 
-        return authToken;
+        return 'authToken';
       },
       signOut: () => {
         dispatch({ type: 'SIGN_OUT' });
