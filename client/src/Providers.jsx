@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 import AuthProvider from '@shared/providers/authProvider';
 import CustomSnackbarProvider from '@shared/providers/customSnackbarsProvider';
@@ -18,14 +16,12 @@ export default function Providers({ children }) {
     <ThemeContext.Provider value={themeProviderValue}>
       <ThemeColorSwitch theme={theme} />
       <ThemeProvider theme={themes[theme]}>
-        <LocalizationProvider dateAdapter={AdapterMoment}>
-          <CssBaseline />
-          <CustomSnackbarProvider>
-            <AuthProvider>
-              <QueryProvider>{children}</QueryProvider>
-            </AuthProvider>
-          </CustomSnackbarProvider>
-        </LocalizationProvider>
+        <CssBaseline />
+        <CustomSnackbarProvider>
+          <AuthProvider>
+            <QueryProvider>{children}</QueryProvider>
+          </AuthProvider>
+        </CustomSnackbarProvider>
       </ThemeProvider>
     </ThemeContext.Provider>
   );

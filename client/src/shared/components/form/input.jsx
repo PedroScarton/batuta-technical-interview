@@ -12,9 +12,6 @@ import {
   Typography,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { DatePicker, TimePicker } from '@mui/x-date-pickers';
-
-import ReactHtmlParser from 'react-html-parser';
 
 import {
   INPUT_BLUR,
@@ -26,9 +23,8 @@ import {
 import { useBatutaTheme } from '@shared/hooks/theme-hooks';
 import { figmaFonts } from '@shared/theme/typography';
 
-import { dateValidate, validate } from '@utils/validators';
+import { validate } from '@utils/validators';
 
-import MuiTranslator from '../util/muiTranslator';
 import styles from './input.module.css';
 
 const onNumberInput = (value, dispatch, validators) => {
@@ -106,11 +102,6 @@ const Input = forwardRef((props, ref) => {
 
     const text = event.target.value;
     const isValid = validate(text, validators);
-    dispatch({ type: INPUT_CHANGE, value: text, isValid: isValid });
-  };
-
-  const dateHandler = (text) => {
-    const isValid = dateValidate(text, validators);
     dispatch({ type: INPUT_CHANGE, value: text, isValid: isValid });
   };
 
@@ -246,58 +237,6 @@ const Input = forwardRef((props, ref) => {
         />
       </React.Fragment>
     );
-  } else if (props.type === 'date') {
-    element = (
-      <MuiTranslator>
-        <DatePicker
-          id={props.id}
-          placeholder={props.placeholder}
-          disabled={!!props.disabled}
-          onChange={dateHandler}
-          onBlur={lostFocusHandler}
-          onFocus={onFocusHandler}
-          value={inputState.value}
-          inputRef={props.reference}
-          fullWidth
-          {...props}
-          PopperProps={{ placement: 'bottom-end' }}
-          OpenPickerButtonProps={{ size: 'small', sx: { marginRight: '.25rem' } }}
-          renderInput={({ inputRef, inputProps, InputProps }) => (
-            <BatutaInput
-              ref={inputRef}
-              {...inputProps}
-              endAdornment={InputProps?.endAdornment}
-              fullWidth
-            />
-          )}
-        />
-      </MuiTranslator>
-    );
-  } else if (props.type === 'time') {
-    element = (
-      <TimePicker
-        id={props.id}
-        disabled={!!props.disabled}
-        onChange={dateHandler}
-        onBlur={lostFocusHandler}
-        onFocus={onFocusHandler}
-        value={inputState.value}
-        inputRef={props.reference}
-        fullWidth
-        ampm={false}
-        {...props}
-        PopperProps={{ placement: 'bottom-end' }}
-        OpenPickerButtonProps={{ size: 'small', sx: { marginRight: '.25rem' } }}
-        renderInput={({ inputRef, inputProps, InputProps }) => (
-          <BatutaInput
-            ref={inputRef}
-            {...inputProps}
-            endAdornment={InputProps?.endAdornment}
-            fullWidth
-          />
-        )}
-      />
-    );
   }
 
   return (
@@ -338,7 +277,7 @@ const Input = forwardRef((props, ref) => {
                 )
               : !!props.helperText && (
                   <div className={styles.TextContainer}>
-                    <Typography variant="body-sm">{ReactHtmlParser(props.helperText)}</Typography>
+                    <Typography variant="body-sm">{props.helperText}</Typography>
                   </div>
                 )
             : !!props.helperText && (
@@ -347,7 +286,7 @@ const Input = forwardRef((props, ref) => {
                     className={styles.helperText}
                     variant={!!props.disabled ? 'disabled' : 'body-sm'}
                   >
-                    {ReactHtmlParser(props.helperText)}
+                    {props.helperText}
                   </Typography>
                 </div>
               )}

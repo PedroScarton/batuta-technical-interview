@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LoadingButton from '@mui/lab/LoadingButton';
+import { Button as MuiButton } from '@mui/material';
 
 import styles from './button.module.css';
 
@@ -14,21 +14,23 @@ const Button = ({
   boxShadow = 0,
   color,
   variantStyle,
+  loading = false,
   ...rest
 }) => {
   return (
     <div className={`${fullWidth && styles.buttonFullWidth} ${containerClasses || ''}`}>
-      <LoadingButton
+      <MuiButton
         variant={variant || 'contained'}
         {...rest}
         fullWidth={fullWidth}
         sx={{ boxShadow, color }}
         color={variantStyle}
         id={id}
+        disabled={loading}
       >
         {label}
         {children}
-      </LoadingButton>
+      </MuiButton>
     </div>
   );
 };

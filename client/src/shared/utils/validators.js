@@ -1,4 +1,3 @@
-import moment from 'moment';
 import Validator from 'validator';
 
 const VALIDATOR_TYPE_REQUIRE = 'REQUIRE';
@@ -71,21 +70,6 @@ export const validate = (value = '', validators = []) => {
   value = typeof value != 'string' ? value : value.trimStart();
 
   return validators.every((validator) => runValidateAction(validator, value));
-};
-
-export const dateValidate = (value = '', validators = []) => {
-  let isValid = true;
-  const trimmedValue = typeof value != 'string' ? value : value.trimStart();
-  for (const validator of validators) {
-    if (validator.type === VALIDATOR_TYPE_REQUIRE) {
-      isValid = isValid && trimmedValue !== null && moment(trimmedValue).isValid();
-    } else {
-      if (trimmedValue !== null && trimmedValue.length !== 0) {
-      }
-    }
-  }
-
-  return isValid;
 };
 
 export const getValidators = (config) => {
