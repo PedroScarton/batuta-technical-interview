@@ -1,0 +1,7 @@
+{
+    "email": "mail@test.com",
+    "password": "password123",
+    "invalidEmail": "invalid@test.com",
+    "invalidPassword": "invalid"
+  }
+  
